@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
 <head>
-    <title>SVG Viewer v4</title>
+    <title>SVG Viewer</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         body, html {
@@ -57,12 +57,13 @@
             var translate = [(svg.node().clientWidth - bbox.width * scale) / 2, (svg.node().clientHeight - bbox.height * scale) / 2];
 
             svgNode.attr("transform", "translate(" + translate + ") scale(" + scale + ")");
-            svg.call(zoomHandler.transform, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale));
         });
 
         function zoomFunction(event) {
             g.attr("transform", event.transform);
         }
+
+        svg.call(zoomHandler);
 
         d3.select("#zoom_in").on("click", function() {
             zoomHandler.scaleBy(svg.transition().duration(750), 1.3);
