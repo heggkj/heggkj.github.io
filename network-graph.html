@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
 <head>
-    <title>SVG Viewer</title>
+    <title>SVG Viewer v5</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         body, html {
             height: 100%;
             margin: 0;
             padding: 0;
-        }
-
-        .zoom {
-            cursor: move;
-            fill: none;
-            pointer-events: all;
         }
 
         #controls {
@@ -57,6 +51,25 @@
             var translate = [(svg.node().clientWidth - bbox.width * scale) / 2, (svg.node().clientHeight - bbox.height * scale) / 2];
 
             svgNode.attr("transform", "translate(" + translate + ") scale(" + scale + ")");
+            
+            // Select all text elements in the SVG
+            var texts = svg.selectAll("text");
+
+            // Create a force simulation
+            var simulation = d3.forceSimulation(texts.nodes())
+                .velocityDecay(0.2)
+                .force("x", d3.forceX().strength(0.002))
+                .force("y", d3.forceY().strength(0.002))
+                .force("collide", d3.forceCollide().radius(function(d) {
+                    return d.getBoundingClientRect().width;
+                }))
+                .on("tick", ticked);
+
+            function ticked() {
+                texts
+                    .attr("x", function(d) { return d.x; })
+                    .attr("y", function(d) { return d.y; });
+            }
         });
 
         function zoomFunction(event) {
