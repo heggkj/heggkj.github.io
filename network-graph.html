@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SVG Viewer</title>
+    <title>SVG Viewer v2</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         .zoom {
@@ -45,22 +45,19 @@
         d3.xml("https://heggkj.github.io/network_graph.svg").then(function(xml) {
             g.node().appendChild(xml.documentElement);
 
-            // Get the dimensions of the loaded SVG
-            var bbox = g.node().getBBox();
+            var svgNode = d3.select(g.node().firstChild);
+            var bbox = svgNode.node().getBBox();
 
-            // Calculate the scale and translate parameters
             var scale = Math.min(svg.node().clientWidth / bbox.width, svg.node().clientHeight / bbox.height);
             var translate = [(svg.node().clientWidth - bbox.width * scale) / 2, (svg.node().clientHeight - bbox.height * scale) / 2];
 
-            // Apply the scale and translate parameters to the SVG
-            g.attr("transform", "translate(" + translate + ") scale(" + scale + ")");
+            svgNode.attr("transform", "translate(" + translate + ") scale(" + scale + ")");
+            svg.call(zoomHandler.transform, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale));
         });
 
         function zoomFunction(event) {
             g.attr("transform", event.transform);
         }
-
-        svg.call(zoomHandler);
 
         d3.select("#zoom_in").on("click", function() {
             zoomHandler.scaleBy(svg.transition().duration(750), 1.3);
