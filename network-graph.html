@@ -44,6 +44,16 @@
 
         d3.xml("https://heggkj.github.io/network_graph.svg").then(function(xml) {
             g.node().appendChild(xml.documentElement);
+
+            // Get the dimensions of the loaded SVG
+            var bbox = g.node().getBBox();
+
+            // Calculate the scale and translate parameters
+            var scale = Math.min(svg.node().clientWidth / bbox.width, svg.node().clientHeight / bbox.height);
+            var translate = [(svg.node().clientWidth - bbox.width * scale) / 2, (svg.node().clientHeight - bbox.height * scale) / 2];
+
+            // Apply the scale and translate parameters to the SVG
+            g.attr("transform", "translate(" + translate + ") scale(" + scale + ")");
         });
 
         function zoomFunction(event) {
