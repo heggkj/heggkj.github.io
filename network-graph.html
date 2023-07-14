@@ -26,6 +26,7 @@
     <div id="controls">
         <button id="zoom_in">Zoom In</button>
         <button id="zoom_out">Zoom Out</button>
+        <button id="reset">Reset</button>
     </div>
     <div id="svg-container"></div>
 
@@ -41,23 +42,31 @@
 
             svg.attr("width", "100%")
                 .attr("height", "100%")
-                .call(zoomHandler)
                 .append("rect")
                 .attr("class", "zoom")
                 .attr("width", "100%")
                 .attr("height", "100%");
+
+            var g = svg.append("g");
+
+            g.call(zoomHandler);
+            g.node().appendChild(xml.documentElement);
         });
 
         function zoomFunction(event) {
-            d3.select("svg").attr("transform", event.transform);
+            d3.select("g").attr("transform", event.transform);
         }
 
         d3.select("#zoom_in").on("click", function() {
-            zoomHandler.scaleBy(svgContainer.transition().duration(750), 1.3);
+            zoomHandler.scaleBy(d3.select("g").transition().duration(750), 1.3);
         });
 
         d3.select("#zoom_out").on("click", function() {
-            zoomHandler.scaleBy(svgContainer.transition().duration(750), 1/1.3);
+            zoomHandler.scaleBy(d3.select("g").transition().duration(750), 1/1.3);
+        });
+
+        d3.select("#reset").on("click", function() {
+            d3.select("g").transition().duration(750).call(zoomHandler.transform, d3.zoomIdentity);
         });
     </script>
 </body>
