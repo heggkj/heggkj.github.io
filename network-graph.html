@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
 <head>
-    <title>SVG Viewer v3</title>
+    <title>SVG Viewer v4</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         body, html {
@@ -45,7 +45,6 @@
         var g = svg.append("g");
 
         var zoomHandler = d3.zoom()
-            .filter(event => !event.type.startsWith("wheel"))
             .on("zoom", zoomFunction);
 
         d3.xml("https://heggkj.github.io/network_graph.svg").then(function(xml) {
