@@ -21,7 +21,7 @@
         var zoomHandler = d3.zoom()
             .on("zoom", zoomFunction);
 
-        d3.xml("path_to_your_svg.svg").then(function(xml) {
+        d3.xml("network_graph.svg").then(function(xml) {
             svgContainer.node().appendChild(xml.documentElement);
             var svg = d3.select("svg");
 
