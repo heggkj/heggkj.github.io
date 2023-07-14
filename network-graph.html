@@ -32,41 +32,36 @@
 
     <script>
         var svgContainer = d3.select("#svg-container");
+        var svg = svgContainer.append("svg")
+            .attr("width", "100%")
+            .attr("height", "100%");
+
+        var g = svg.append("g");
+
         var zoomHandler = d3.zoom()
             .filter(event => !event.type.startsWith("wheel"))
             .on("zoom", zoomFunction);
 
         d3.xml("https://heggkj.github.io/network_graph.svg").then(function(xml) {
-            svgContainer.node().appendChild(xml.documentElement);
-            var svg = d3.select("svg");
-
-            svg.attr("width", "100%")
-                .attr("height", "100%")
-                .append("rect")
-                .attr("class", "zoom")
-                .attr("width", "100%")
-                .attr("height", "100%");
-
-            var g = svg.append("g");
-
-            g.call(zoomHandler);
             g.node().appendChild(xml.documentElement);
         });
 
         function zoomFunction(event) {
-            d3.select("g").attr("transform", event.transform);
+            g.attr("transform", event.transform);
         }
 
+        svg.call(zoomHandler);
+
         d3.select("#zoom_in").on("click", function() {
-            zoomHandler.scaleBy(d3.select("g").transition().duration(750), 1.3);
+            zoomHandler.scaleBy(svg.transition().duration(750), 1.3);
         });
 
         d3.select("#zoom_out").on("click", function() {
-            zoomHandler.scaleBy(d3.select("g").transition().duration(750), 1/1.3);
+            zoomHandler.scaleBy(svg.transition().duration(750), 1/1.3);
         });
 
         d3.select("#reset").on("click", function() {
-            d3.select("g").transition().duration(750).call(zoomHandler.transform, d3.zoomIdentity);
+            svg.transition().duration(750).call(zoomHandler.transform, d3.zoomIdentity);
         });
     </script>
 </body>
