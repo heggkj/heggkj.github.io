@@ -25,9 +25,7 @@
 
     var svg = d3.select("body").append("svg")
         .attr("width", width)
-        .attr("height", height)
-        .attr("pointer-events", "all")
-        .call(d3.zoom().scaleExtent([1/2, 4]).on("zoom", zoomed));
+        .attr("height", height);
 
     var g = svg.append("g");
 
@@ -35,6 +33,12 @@
         .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(100))
         .force("charge", d3.forceManyBody())
         .force("center", d3.forceCenter(width / 2, height / 2));
+
+    function zoomed(event) {
+        g.attr("transform", event.transform);
+    }
+
+    svg.call(d3.zoom().scaleExtent([1/2, 4]).on("zoom", zoomed));
 
     d3.csv("domain-graph.csv").then(function(links) {
         var nodes = {};
@@ -81,10 +85,6 @@
 
         simulation.force("link")
             .links(links);
-
-        function zoomed(event) {
-            g.attr("transform", event.transform);
-        }
 
         function ticked() {
             link
