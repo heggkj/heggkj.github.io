@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Domain Graph v1</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         .link {
@@ -45,8 +46,10 @@
 
         // Compute the distinct nodes from the links.
         links.forEach(function(link) {
-            link.source = nodes[link.source] || (nodes[link.source] = {id: link.source, count: link.count});
-            link.target = nodes[link.target] || (nodes[link.target] = {id: link.target, count: link.count});
+            link.source = nodes[link.source] || (nodes[link.source] = {id: link.source, count: 0});
+            link.target = nodes[link.target] || (nodes[link.target] = {id: link.target, count: 0});
+            link.source.count++;
+            link.target.count++;
         });
 
         var link = g.append("g")
@@ -62,11 +65,12 @@
             .data(Object.values(nodes))
             .enter().append("circle")
             .attr("class", "node")
-            .attr("r", function(d) { return Math.sqrt(d.count) / 2; })  // set radius based on count
+            .attr("r", function(d) { return Math.sqrt(d.count) * 2; })  // set radius based on count
             .call(d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
-                .on("end", dragended));
+                .on("end", dragended))
+            .on("dblclick", recenter);  // add event listener for double click
 
         node.append("title")
             .text(function(d) { return d.id; });
@@ -117,6 +121,13 @@
             if (!event.active) simulation.alphaTarget(0);
             d.fx = null;
             d.fy = null;
+        }
+
+        function recenter(d) {
+            var scale = svg.property("__zoom").k;
+            var x = -d.x * scale + width / 2;
+            var y = -d.y * scale + height / 2;
+            svg.transition().duration(750).call(d3.zoom().on("zoom", zoomed).scaleTo, scale, [x, y]);
         }
     });
 </script>
