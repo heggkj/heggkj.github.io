@@ -51,7 +51,7 @@
         var node = svg.append("g")
             .attr("class", "nodes")
             .selectAll("circle")
-            .data(d3.values(nodes))
+            .data(Object.values(nodes))
             .enter().append("circle")
             .attr("class", "node")
             .attr("r", 5)
@@ -64,7 +64,7 @@
             .text(function(d) { return d.id; });
 
         simulation
-            .nodes(d3.values(nodes))
+            .nodes(Object.values(nodes))
             .on("tick", ticked);
 
         simulation.force("link")
