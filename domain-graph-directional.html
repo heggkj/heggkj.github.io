@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Domain Graph v9</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        .link {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+
+        .node {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .label {
+            font: 10px sans-serif;
+        }
+    </style>
+</head>
+<body>
+<script>
+    var width = window.innerWidth, height = window.innerHeight;
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    // Define arrow markers for graph links
+    svg.append('defs').append('marker')
+        .attr('id', 'arrowhead')
+        .attr('viewBox', '-0 -5 10 10')
+        .attr('refX', 13)
+        .attr('refY', 0)
+        .attr('orient', 'auto')
+        .attr('markerWidth', 13)
+        .attr('markerHeight', 13)
+        .attr('xoverflow', 'visible')
+        .append('svg:path')
+        .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
+        .attr('fill', '#999')
+        .style('stroke', 'none');
+
+    var g = svg.append("g");
+
+    var simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(100))
+        .force("charge", d3.forceManyBody())
+        .force("center", d3.forceCenter(width / 2, height / 2));
+
+    function zoomed(event) {
+        g.attr("transform", event.transform);
+    }
+
+    svg.call(d3.zoom().scaleExtent([1/2, 8]).on("zoom", zoomed));
+
+    d3.csv("domain-graph.csv").then(function(links) {
+        var nodes = {};
+        var tlds = {};
+
+        // Compute the distinct nodes from the links.
+        links.forEach(function(link) {
+            link.source = nodes[link.source] || (nodes[link.source] = {id: link.source, count: 0, tld: link.source.split('.').pop()});
+            link.target = nodes[link.target] || (nodes[link.target] = {id: link.target, count: 0, tld: link.target.split('.').pop()});
+            link.source.count++;
+            link.target.count++;
+            if (!(link.source.tld in tlds)) {
+                tlds[link.source.tld] = d3.hsl(Math.random() * 360, 0.5, Math.random() * 0.4 + 0.6);  // assign a random light color to each top-level domain
+            }
+            if (!(link.target.tld in tlds)) {
+                tlds[link.target.tld] = d3.hsl(Math.random() * 360, 0.5, Math.random() * 0.4 + 0.6);  // assign a random light color to each top-level domain
+            }
+        });
+
+        var link = g.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(links)
+            .enter().append("line")
+            .attr('marker-end', 'url(#arrowhead)')  // Add marker-end attribute to draw arrowhead
+            .attr("class", "link");
+
+        var node = g.append("g")
+            .attr("class", "nodes")
+            .selectAll("circle")
+            .data(Object.values(nodes))
+            .enter().append("circle")
+            .attr("class", "node")
+            .attr("r", function(d) { return Math.sqrt(d.count) * 2; })  // set radius based on count
+            .attr("fill", function(d) { return tlds[d.tld]; })  // color nodes based on top-level domain with light colors
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended))
+            .on("dblclick", recenter);  // add event listener for double click
+
+        node.append("title")
+            .text(function(d) { return d.id; });
+
+        var label = g.append("g")
+            .attr("class", "labels")
+            .selectAll("a")
+            .data(Object.values(nodes))
+            .enter().append("a")
+            .attr("xlink:href", function(d) { return "http://" + d.id; })
+            .attr("target", "_blank")
+            .append("text")
+            .attr("class", "label")
+            .text(function(d) { return d.id; });
+
+        simulation
+            .nodes(Object.values(nodes))
+            .on("tick", ticked);
+
+        simulation.force("link")
+            .links(links);
+
+        function ticked() {
+            link
+                .attr("x1", function(d) { return d.source.x; })
+                .attr("y1", function(d) { return d.source.y; })
+                .attr("x2", function(d) { return d.target.x; })
+                .attr("y2", function(d) { return d.target.y; });
+
+            node
+                .attr("cx", function(d) { return d.x; })
+                .attr("cy", function(d) { return d.y; });
+
+            label
+                .attr("x", function(d) { return d.x + 10; })
+                .attr("y", function(d) { return d.y + 3; });
+        }
+
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        function recenter(d) {
+            var scale = svg.property("__zoom").k;
+            svg.transition().duration(750).call(d3.zoom().on("zoom", zoomed).translateTo, width / 2 - scale * d.x, height / 2 - scale * d.y).scaleBy(1.2);
+        }
+    });
+</script>
+</body>
+</html>
