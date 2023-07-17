@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v11</title>
+  <title>Image Graph v13</title>
   <style>
     body {
       background: url('clouds.jpg') repeat; /* replace 'clouds.jpg' with the URL of your cloud-filled background image */
@@ -68,11 +68,50 @@
   var container = document.getElementById('grid-container');
   var data = [];
   var dataIndex = 0;
-  var loading = false;
-  var rowHeight = 362 + 10; // height of an image card + grid gap, consistent with CSS
-  var numRowsToLoad = Math.ceil(window.innerHeight / rowHeight) + 5; // number of rows to load to fill the viewport, plus a few extra rows
 
-  /* (the rest of the JavaScript part remains the same) */
+  function getDomain(url) {
+    // Extract domain from URL
+    var a = document.createElement('a');
+    a.href = url;
+    return a.hostname;
+  }
+
+  function loadImages(numImages) {
+    for (var i = 0; i < numImages && dataIndex < data.length; i++) {
+      var item = data[dataIndex];
+
+      var gridItem = document.createElement('div');
+      gridItem.className = 'grid-item';
+
+      var domain = document.createElement('a');
+      domain.textContent = getDomain(item.url);
+      domain.href = item.source;
+      domain.className = 'domain';
+
+      var img = document.createElement('img');
+      img.src = item.url;
+      img.alt = item.alt_text;
+
+      var a = document.createElement('a');
+      a.href = item.source;
+      a.textContent = item.alt_text;
+
+      gridItem.appendChild(domain);
+      gridItem.appendChild(img);
+      gridItem.appendChild(a);
+
+      container.appendChild(gridItem);
+
+      dataIndex++;
+    }
+  }
+
+  d3.csv("image-graph.csv").then(function(fetchedData) {
+    data = fetchedData;
+    loadImages(15); // load 15 images at the start
+  }).catch(function(error) {
+    console.log(error);
+  });
 </script>
 
 </body>
