@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v4</title>
+  <title>Image Graph v5</title>
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(126px, 1fr)); /* each card is now twice as big */
-      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(252px, 1fr)); /* each card is now four times as big */
+      grid-gap: 20px; /* increased gap */
       padding: 10px;
-      overflow: auto;
-      height: 100vh;
+      background-color: #f8f8f8; /* light gray background */
     }
 
     .grid-item {
       background-color: rgba(255, 255, 255, 0.8);
       border: 1px solid rgba(0, 0, 0, 0.8);
-      padding: 10px; /* reduced padding */
+      padding: 20px; /* increased padding */
       font-size: 12px; /* reduced font size */
       text-align: center;
-      width: 126px;   /* approximate width of a playing card */
-      height: 176px;  /* approximate height of a playing card */
+      width: 252px;   /* approximate width of a playing card */
+      height: 352px;  /* approximate height of a playing card */
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -27,8 +26,14 @@
 
     .grid-item img {
       width: 100%;  
-      height: calc(100% - 1em - 10px); /* leave some space for the alt_text */
+      height: calc(100% - 2em - 20px); /* leave some space for the alt_text and domain */
       object-fit: cover;
+    }
+
+    .grid-item .domain {
+      font-size: 10px;
+      color: #888;
+      text-align: left;
     }
 
     .grid-item a {
@@ -61,49 +66,59 @@
   var dataIndex = 0;
   var loading = false;
 
-  function loadNextImage() {
-    if (dataIndex >= data.length || loading) {
-      return;
-    }
-
-    loading = true;
-
-    var item = data[dataIndex];
-
-    var gridItem = document.createElement('div');
-    gridItem.className = 'grid-item';
-
-    var img = document.createElement('img');
-    img.src = item.url;
-    img.alt = item.alt_text;
-    img.onload = function() {
-      loading = false;
-      if ((container.scrollTop + container.offsetHeight) >= container.scrollHeight) {
-        loadNextImage(); // load next image if the scrollbar is at the bottom
-      }
-    };
-
+  function getDomain(url) {
     var a = document.createElement('a');
-    a.href = item.source;
-    a.textContent = item.alt_text;
-
-    gridItem.appendChild(img);
-    gridItem.appendChild(a);
-
-    container.appendChild(gridItem);
-
-    dataIndex++;
+    a.href = url;
+    return a.hostname;
   }
 
-  container.onscroll = function() {
-    if ((container.scrollTop + container.offsetHeight) >= container.scrollHeight) {
-      loadNextImage(); // load next image when the scrollbar reaches the bottom
+  function loadImages() {
+    for (var i = 0; i < 3 && dataIndex < data.length; i++) { // load three images at a time
+      var item = data[dataIndex];
+
+      var gridItem = document.createElement('div');
+      gridItem.className = 'grid-item';
+
+      var domain = document.createElement('div');
+      domain.textContent = getDomain(item.url);
+      domain.className = 'domain';
+
+      var img = document.createElement('img');
+      img.src = item.url;
+      img.alt = item.alt_text;
+      img.onload = function() {
+        loading = false;
+      };
+
+      var a = document.createElement('a');
+      a.href = item.source;
+      a.textContent = item.alt_text;
+
+      gridItem.appendChild(domain);
+      gridItem.appendChild(img);
+      gridItem.appendChild(a);
+
+      container.appendChild(gridItem);
+
+      dataIndex++;
+    }
+
+    if (dataIndex < data.length) {
+      loading = true;
+    }
+  }
+
+  window.onscroll = function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      if (!loading) {
+        loadImages(); // load next images when the scrollbar reaches the bottom
+      }
     }
   };
 
   d3.csv("image-graph.csv").then(function(fetchedData) {
     data = fetchedData;
-    loadNextImage(); // load the first image
+    loadImages(); // load the first images
   }).catch(function(error) {
     console.log(error);
   });
