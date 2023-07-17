@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Graph v2</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+      width: 63px;   /* approximate width of a playing card */
+      height: 88px;  /* approximate height of a playing card */
+      object-fit: cover;  /* this will ensure that the image is resized and cropped to fit the dimensions */
+    }
+  </style>
+</head>
+<body>
+
+<h1>Image Grid</h1>
+
+<div class="grid-container" id="grid-container">
+  <!-- JavaScript will insert the grid items here -->
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>
+  d3.csv("image-graph.csv").then(function(data) {
+    var container = document.getElementById('grid-container');
+
+    data.forEach(function(item) {
+      var gridItem = document.createElement('div');
+      gridItem.className = 'grid-item';
+
+      var img = document.createElement('img');
+      img.src = item.url;
+      img.alt = item.alt_text;
+      img.style.width = "100%";  // ensure the image fills the card
+      img.style.height = "100%";
+      img.style.objectFit = "cover";
+
+      var p = document.createElement('p');
+      p.textContent = 'Source: ' + item.source + '\n' + 'Instructions: ' + item.instructions;
+
+      gridItem.appendChild(img);
+      gridItem.appendChild(p);
+
+      container.appendChild(gridItem);
+    });
+  }).catch(function(error) {
+    console.log(error);
+  });
+</script>
+
+</body>
+</html>
