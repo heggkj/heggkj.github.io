@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Domain Graph v1</title>
+    <title>Domain Graph v2</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         .link {
@@ -77,14 +77,14 @@
                 .on("end", dragended))
             .on("dblclick", recenter);  // add event listener for double click
 
-        node.append("title")
-            .text(function(d) { return d.id; });
-
         var label = g.append("g")
             .attr("class", "labels")
             .selectAll("text")
             .data(Object.values(nodes))
-            .enter().append("text")
+            .enter().append("a")
+            .attr("xlink:href", function(d) { return "http://" + d.id; })
+            .attr("target", "_blank")
+            .append("text")
             .attr("class", "label")
             .text(function(d) { return d.id; });
 
@@ -122,19 +122,3 @@
             d.fy = event.y;
         }
 
-        function dragended(event, d) {
-            if (!event.active) simulation.alphaTarget(0);
-            d.fx = null;
-            d.fy = null;
-        }
-
-        function recenter(d) {
-            var scale = svg.property("__zoom").k;
-            var x = -d.x * scale + width / 2;
-            var y = -d.y * scale + height / 2;
-            svg.transition().duration(750).call(d3.zoom().on("zoom", zoomed).scaleTo, scale, [x, y]);
-        }
-    });
-</script>
-</body>
-</html>
