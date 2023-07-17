@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Domain Graph v3</title>
+    <title>Domain Graph v4</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         .link {
@@ -13,7 +13,6 @@
             stroke: #fff;
             stroke-width: 1.5px;
             fill: #ddd;
-            fill-opacity: 0.5;
         }
 
         .label {
@@ -36,16 +35,17 @@
         .force("charge", d3.forceManyBody())
         .force("center", d3.forceCenter(width / 2, height / 2));
 
-    var color = d3.scaleOrdinal(d3.schemeCategory10);  // create color scale
+    var color = d3.scaleOrdinal();  // create color scale
 
     function zoomed(event) {
         g.attr("transform", event.transform);
     }
 
-    svg.call(d3.zoom().scaleExtent([1/2, 4]).on("zoom", zoomed));
+    svg.call(d3.zoom().scaleExtent([1/2, 8]).on("zoom", zoomed));
 
     d3.csv("domain-graph.csv").then(function(links) {
         var nodes = {};
+        var tlds = [];
 
         // Compute the distinct nodes from the links.
         links.forEach(function(link) {
@@ -53,7 +53,12 @@
             link.target = nodes[link.target] || (nodes[link.target] = {id: link.target, count: 0, tld: link.target.split('.').pop()});
             link.source.count++;
             link.target.count++;
+            tlds.push(link.source.tld);
+            tlds.push(link.target.tld);
         });
+
+        color.domain([...new Set(tlds)]);  // set domain of color scale to unique top-level domains
+        color.range(d3.schemeCategory10);  // set range of color scale to 10 distinct colors
 
         var link = g.append("g")
             .attr("class", "links")
@@ -79,9 +84,9 @@
         node.append("title")
             .text(function(d) { return d.id; });
 
-        var label = g.append("g")
+        var label = svg.append("g")
             .attr("class", "labels")
-            .selectAll("a")
+            .selectAll("text")
             .data(Object.values(nodes))
             .enter().append("a")
             .attr("xlink:href", function(d) { return "http://" + d.id; })
@@ -132,9 +137,7 @@
 
         function recenter(d) {
             var scale = svg.property("__zoom").k;
-            var x = -d.x * scale + width / 2;
-            var y = -d.y * scale + height / 2;
-            svg.transition().duration(750).call(d3.zoom().on("zoom", zoomed).translateTo, x, y);
+            svg.transition().duration(750).call(d3.zoom().on("zoom", zoomed).translateTo, width / 2 - scale * d.x, height / 2 - scale * d.y).scaleBy(1.2);
         }
     });
 </script>
