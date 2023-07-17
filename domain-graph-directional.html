@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Directional Domain Graph v2</title>
+    <title>Directional Domain Graph v3</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         .link {
@@ -32,11 +32,11 @@
     svg.append('defs').append('marker')
         .attr('id', 'arrowhead')
         .attr('viewBox', '-0 -5 10 10')
-        .attr('refX', 5)
+        .attr('refX', 4)
         .attr('refY', 0)
         .attr('orient', 'auto')
-        .attr('markerWidth', 5)
-        .attr('markerHeight', 5)
+        .attr('markerWidth', 4)
+        .attr('markerHeight', 4)
         .attr('xoverflow', 'visible')
         .append('svg:path')
         .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
@@ -67,10 +67,10 @@
             link.source.count++;
             link.target.count++;
             if (!(link.source.tld in tlds)) {
-                tlds[link.source.tld] = d3.hsl(Math.random() * 360, 0.5, Math.random() * 0.4 + 0.6);  // assign a random light color to each top-level domain
+                tlds[link.source.tld] = d3.hsl(Math.random() * 360, 0.5, link.source.tld == "org" ? Math.random() * 0.2 + 0.4 : Math.random() * 0.4 + 0.6);  // assign a random light color to each top-level domain, unless it's .org which gets a darker color
             }
             if (!(link.target.tld in tlds)) {
-                tlds[link.target.tld] = d3.hsl(Math.random() * 360, 0.5, Math.random() * 0.4 + 0.6);  // assign a random light color to each top-level domain
+                tlds[link.target.tld] = d3.hsl(Math.random() * 360, 0.5, link.target.tld == "org" ? Math.random() * 0.2 + 0.4 : Math.random() * 0.4 + 0.6);  // assign a random light color to each top-level domain, unless it's .org which gets a darker color
             }
         });
 
