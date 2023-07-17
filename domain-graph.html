@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Domain Graph v2</title>
+    <title>Domain Graph v3</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         .link {
@@ -18,7 +18,6 @@
 
         .label {
             font: 10px sans-serif;
-            pointer-events: none;
         }
     </style>
 </head>
@@ -77,9 +76,12 @@
                 .on("end", dragended))
             .on("dblclick", recenter);  // add event listener for double click
 
+        node.append("title")
+            .text(function(d) { return d.id; });
+
         var label = g.append("g")
             .attr("class", "labels")
-            .selectAll("text")
+            .selectAll("a")
             .data(Object.values(nodes))
             .enter().append("a")
             .attr("xlink:href", function(d) { return "http://" + d.id; })
@@ -106,7 +108,7 @@
                 .attr("cx", function(d) { return d.x; })
                 .attr("cy", function(d) { return d.y; });
 
-            label
+            label.selectAll("text")
                 .attr("x", function(d) { return d.x + 10; })
                 .attr("y", function(d) { return d.y + 3; });
         }
@@ -122,3 +124,19 @@
             d.fy = event.y;
         }
 
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        function recenter(d) {
+            var scale = svg.property("__zoom").k;
+            var x = -d.x * scale + width / 2;
+            var y = -d.y * scale + height / 2;
+            svg.transition().duration(750).call(d3.zoom().on("zoom", zoomed).translateTo, x, y);
+        }
+    });
+</script>
+</body>
+</html>
