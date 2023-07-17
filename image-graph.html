@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v6</title>
+  <title>Image Graph v7</title>
   <style>
     /* (the CSS part remains the same) */
   </style>
@@ -27,19 +27,38 @@
     /* (this function remains the same) */
   }
 
+  function loadImage(item) {
+    return new Promise(function(resolve, reject) {
+      var img = new Image();
+      img.src = item.url;
+      img.alt = item.alt_text;
+      img.onload = resolve;
+      img.onerror = reject;
+    });
+  }
+
   function loadImages(numRows) {
-    for (var i = 0; i < numRows && dataIndex < data.length; i++) { // load a specified number of rows at a time
-      /* (the rest of this function remains the same) */
+    if (dataIndex >= data.length) {
+      return Promise.resolve();
     }
 
-    if (dataIndex < data.length) {
-      loading = true;
+    var promises = [];
+    for (var i = 0; i < numRows && dataIndex < data.length; i++) {
+      /* (the rest of this function remains the same) */
+
+      promises.push(loadImage(item));
+      dataIndex++;
     }
+
+    return Promise.all(promises).then(function() {
+      loading = false;
+    });
   }
 
   window.onscroll = function() {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
       if (!loading) {
+        loading = true;
         loadImages(3); // load three more rows when the scrollbar reaches the bottom
       }
     }
@@ -47,6 +66,7 @@
 
   d3.csv("image-graph.csv").then(function(fetchedData) {
     data = fetchedData;
+    loading = true;
     loadImages(numRowsToLoad); // load enough rows to fill the viewport, plus a few extra rows
   }).catch(function(error) {
     console.log(error);
