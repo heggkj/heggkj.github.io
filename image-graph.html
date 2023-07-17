@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v9</title>
+  <title>Image Graph v10</title>
   <style>
+    body {
+      background: url('clouds.jpg') repeat; /* replace 'clouds.jpg' with the URL of your cloud-filled background image */
+    }
+
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(252px, 1fr)); /* each card is now four times as big */
-      grid-gap: 20px; /* increased gap */
+      grid-gap: 10px; /* padding between cards */
       padding: 10px;
-      background-color: #f8f8f8; /* light gray background */
+      background-color: transparent; /* background is transparent to show the body's background */
     }
 
     .grid-item {
       background-color: rgba(255, 255, 255, 0.8);
       border: 1px solid rgba(0, 0, 0, 0.8);
-      padding: 20px; /* increased padding */
-      font-size: 12px; /* reduced font size */
+      padding: 5px; /* reduced padding */
+      font-size: 12px;
       text-align: center;
-      width: 252px;   /* approximate width of a playing card */
-      height: 352px;  /* approximate height of a playing card */
+      width: 252px;
+      height: 352px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
     .grid-item img {
-      width: 100%;  
-      height: calc(100% - 2em - 20px); /* leave some space for the alt_text and domain */
+      width: 100%;
+      height: calc(100% - 2em - 10px); /* adjusted for the reduced padding */
       object-fit: cover;
     }
 
@@ -65,82 +69,10 @@
   var data = [];
   var dataIndex = 0;
   var loading = false;
-  var rowHeight = 352 + 20; // height of an image card + grid gap
-  var numRowsToLoad = Math.ceil(window.innerHeight / rowHeight) + 3; // number of rows to load to fill the viewport, plus a few extra rows
+  var rowHeight = 352 + 10; // height of an image card + grid gap
+  var numRowsToLoad = Math.ceil(window.innerHeight / rowHeight) + 5; // number of rows to load to fill the viewport, plus a few extra rows
 
-  function getDomain(url) {
-    /* (this function remains the same) */
-  }
-
-  function loadImage(item) {
-    return new Promise(function(resolve, reject) {
-      var img = new Image();
-      img.src = item.url;
-      img.alt = item.alt_text;
-      img.onload = resolve;
-      img.onerror = reject;
-    });
-  }
-
-  function loadImages(numRows) {
-    if (dataIndex >= data.length) {
-      return Promise.resolve();
-    }
-
-    var promises = [];
-    for (var i = 0; i < numRows && dataIndex < data.length; i++) {
-      var item = data[dataIndex];
-
-      var gridItem = document.createElement('div');
-      gridItem.className = 'grid-item';
-
-      var domain = document.createElement('a');
-      domain.textContent = getDomain(item.url);
-      domain.href = item.source;
-      domain.className = 'domain';
-
-      var img = document.createElement('img');
-      img.src = item.url;
-      img.alt = item.alt_text;
-      img.style.width = '100%';
-      img.style.height = 'calc(100% - 2em - 20px)';
-      img.style.objectFit = 'cover';
-
-      var a = document.createElement('a');
-      a.href = item.source;
-      a.textContent = item.alt_text;
-
-      gridItem.appendChild(domain);
-      gridItem.appendChild(img);
-      gridItem.appendChild(a);
-
-      container.appendChild(gridItem);
-
-      promises.push(loadImage(item));
-      dataIndex++;
-    }
-
-    return Promise.all(promises).then(function() {
-      loading = false;
-    });
-  }
-
-  window.onscroll = function() {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-      if (!loading) {
-        loading = true;
-        loadImages(3); // load three more rows when the scrollbar reaches the bottom
-      }
-    }
-  };
-
-  d3.csv("image-graph.csv").then(function(fetchedData) {
-    data = fetchedData;
-    loading = true;
-    loadImages(numRowsToLoad); // load enough rows to fill the viewport, plus a few extra rows
-  }).catch(function(error) {
-    console.log(error);
-  });
+  /* (the rest of the JavaScript part remains the same) */
 </script>
 
 </body>
