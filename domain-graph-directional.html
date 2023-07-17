@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Directional Domain Graph v4</title>
+    <title>Directional Domain Graph v5</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         .link {
@@ -41,6 +41,7 @@
         .append('svg:path')
         .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
         .attr('fill', '#999')
+        .attr('fill-opacity', 0.67)
         .style('stroke', 'none');
 
     var g = svg.append("g");
