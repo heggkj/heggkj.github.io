@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Domain Graph v4</title>
+    <title>Domain Graph v5</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         .link {
@@ -12,7 +12,6 @@
         .node {
             stroke: #fff;
             stroke-width: 1.5px;
-            fill: #ddd;
         }
 
         .label {
@@ -35,8 +34,6 @@
         .force("charge", d3.forceManyBody())
         .force("center", d3.forceCenter(width / 2, height / 2));
 
-    var color = d3.scaleOrdinal();  // create color scale
-
     function zoomed(event) {
         g.attr("transform", event.transform);
     }
@@ -45,7 +42,7 @@
 
     d3.csv("domain-graph.csv").then(function(links) {
         var nodes = {};
-        var tlds = [];
+        var tlds = {};
 
         // Compute the distinct nodes from the links.
         links.forEach(function(link) {
@@ -53,12 +50,13 @@
             link.target = nodes[link.target] || (nodes[link.target] = {id: link.target, count: 0, tld: link.target.split('.').pop()});
             link.source.count++;
             link.target.count++;
-            tlds.push(link.source.tld);
-            tlds.push(link.target.tld);
+            if (!(link.source.tld in tlds)) {
+                tlds[link.source.tld] = `#${Math.floor(Math.random()*16777215).toString(16)}`;  // assign a random color to each top-level domain
+            }
+            if (!(link.target.tld in tlds)) {
+                tlds[link.target.tld] = `#${Math.floor(Math.random()*16777215).toString(16)}`;  // assign a random color to each top-level domain
+            }
         });
-
-        color.domain([...new Set(tlds)]);  // set domain of color scale to unique top-level domains
-        color.range(d3.schemeCategory10);  // set range of color scale to 10 distinct colors
 
         var link = g.append("g")
             .attr("class", "links")
@@ -74,7 +72,7 @@
             .enter().append("circle")
             .attr("class", "node")
             .attr("r", function(d) { return Math.sqrt(d.count) * 2; })  // set radius based on count
-            .attr("fill", function(d) { return color(d.tld); })  // color nodes based on top-level domain
+            .attr("fill", function(d) { return tlds[d.tld]; })  // color nodes based on top-level domain
             .call(d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
@@ -84,9 +82,9 @@
         node.append("title")
             .text(function(d) { return d.id; });
 
-        var label = svg.append("g")
+        var label = g.append("g")
             .attr("class", "labels")
-            .selectAll("text")
+            .selectAll("a")
             .data(Object.values(nodes))
             .enter().append("a")
             .attr("xlink:href", function(d) { return "http://" + d.id; })
