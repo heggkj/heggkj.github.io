@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v3</title>
+  <title>Image Graph v4</title>
   <style>
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(126px, 1fr)); /* each card is now twice as big */
       grid-gap: 10px;
       padding: 10px;
+      overflow: auto;
+      height: 100vh;
     }
 
     .grid-item {
       background-color: rgba(255, 255, 255, 0.8);
       border: 1px solid rgba(0, 0, 0, 0.8);
-      padding: 20px;
-      font-size: 15px; /* reduced font size to fit the card */
+      padding: 10px; /* reduced padding */
+      font-size: 12px; /* reduced font size */
       text-align: center;
       width: 126px;   /* approximate width of a playing card */
       height: 176px;  /* approximate height of a playing card */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .grid-item img {
       width: 100%;  
-      height: 85%; /* leave some space for the alt_text */
+      height: calc(100% - 1em - 10px); /* leave some space for the alt_text */
       object-fit: cover;
     }
 
     .grid-item a {
       color: black;
       text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
 
     .grid-item a:hover {
@@ -46,34 +56,54 @@
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script>
-  d3.csv("image-graph.csv").then(function(data) {
-    var container = document.getElementById('grid-container');
+  var container = document.getElementById('grid-container');
+  var data = [];
+  var dataIndex = 0;
+  var loading = false;
 
-    data.forEach(function(item, i) {
-      var gridItem = document.createElement('div');
-      gridItem.className = 'grid-item';
+  function loadNextImage() {
+    if (dataIndex >= data.length || loading) {
+      return;
+    }
 
-      var img = document.createElement('img');
-      img.style.display = 'none'; // initially, the image is hidden
+    loading = true;
 
-      // Load the image after a delay, to avoid loading all images at once
-      setTimeout(function() {
-        img.src = item.url;
-        img.style.display = 'block'; // when the image is loaded, display it
-      }, i * 200); // each image is loaded 200ms after the previous one
+    var item = data[dataIndex];
 
-      img.alt = item.alt_text;
-      img.style.objectFit = "cover";
+    var gridItem = document.createElement('div');
+    gridItem.className = 'grid-item';
 
-      var a = document.createElement('a');
-      a.href = item.source;
-      a.textContent = item.alt_text;
+    var img = document.createElement('img');
+    img.src = item.url;
+    img.alt = item.alt_text;
+    img.onload = function() {
+      loading = false;
+      if ((container.scrollTop + container.offsetHeight) >= container.scrollHeight) {
+        loadNextImage(); // load next image if the scrollbar is at the bottom
+      }
+    };
 
-      gridItem.appendChild(img);
-      gridItem.appendChild(a);
+    var a = document.createElement('a');
+    a.href = item.source;
+    a.textContent = item.alt_text;
 
-      container.appendChild(gridItem);
-    });
+    gridItem.appendChild(img);
+    gridItem.appendChild(a);
+
+    container.appendChild(gridItem);
+
+    dataIndex++;
+  }
+
+  container.onscroll = function() {
+    if ((container.scrollTop + container.offsetHeight) >= container.scrollHeight) {
+      loadNextImage(); // load next image when the scrollbar reaches the bottom
+    }
+  };
+
+  d3.csv("image-graph.csv").then(function(fetchedData) {
+    data = fetchedData;
+    loadNextImage(); // load the first image
   }).catch(function(error) {
     console.log(error);
   });
