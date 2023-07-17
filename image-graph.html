@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v7</title>
+  <title>Image Graph v8</title>
   <style>
     /* (the CSS part remains the same) */
   </style>
@@ -44,7 +44,29 @@
 
     var promises = [];
     for (var i = 0; i < numRows && dataIndex < data.length; i++) {
-      /* (the rest of this function remains the same) */
+      var item = data[dataIndex];
+
+      var gridItem = document.createElement('div');
+      gridItem.className = 'grid-item';
+
+      var domain = document.createElement('a');
+      domain.textContent = getDomain(item.url);
+      domain.href = item.source;
+      domain.className = 'domain';
+
+      var img = document.createElement('img');
+      img.src = item.url;
+      img.alt = item.alt_text;
+
+      var a = document.createElement('a');
+      a.href = item.source;
+      a.textContent = item.alt_text;
+
+      gridItem.appendChild(domain);
+      gridItem.appendChild(img);
+      gridItem.appendChild(a);
+
+      container.appendChild(gridItem);
 
       promises.push(loadImage(item));
       dataIndex++;
