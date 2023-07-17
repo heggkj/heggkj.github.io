@@ -12,6 +12,8 @@
         .node {
             stroke: #fff;
             stroke-width: 1.5px;
+            fill: #ddd;
+            fill-opacity: 0.5;
         }
 
         .label {
@@ -35,6 +37,8 @@
         .force("charge", d3.forceManyBody())
         .force("center", d3.forceCenter(width / 2, height / 2));
 
+    var color = d3.scaleOrdinal(d3.schemeCategory10);  // create color scale
+
     function zoomed(event) {
         g.attr("transform", event.transform);
     }
@@ -46,8 +50,8 @@
 
         // Compute the distinct nodes from the links.
         links.forEach(function(link) {
-            link.source = nodes[link.source] || (nodes[link.source] = {id: link.source, count: 0});
-            link.target = nodes[link.target] || (nodes[link.target] = {id: link.target, count: 0});
+            link.source = nodes[link.source] || (nodes[link.source] = {id: link.source, count: 0, tld: link.source.split('.').pop()});
+            link.target = nodes[link.target] || (nodes[link.target] = {id: link.target, count: 0, tld: link.target.split('.').pop()});
             link.source.count++;
             link.target.count++;
         });
@@ -66,6 +70,7 @@
             .enter().append("circle")
             .attr("class", "node")
             .attr("r", function(d) { return Math.sqrt(d.count) * 2; })  // set radius based on count
+            .attr("fill", function(d) { return color(d.tld); })  // color nodes based on top-level domain
             .call(d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
