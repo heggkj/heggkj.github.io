@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Directional Domain Graph v1</title>
+    <title>Directional Domain Graph v2</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         .link {
@@ -74,14 +74,6 @@
             }
         });
 
-        var link = g.append("g")
-            .attr("class", "links")
-            .selectAll("line")
-            .data(links)
-            .enter().append("line")
-            .attr('marker-end', 'url(#arrowhead)')  // Add marker-end attribute to draw arrowhead
-            .attr("class", "link");
-
         var node = g.append("g")
             .attr("class", "nodes")
             .selectAll("circle")
@@ -98,6 +90,14 @@
 
         node.append("title")
             .text(function(d) { return d.id; });
+
+        var link = g.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(links)
+            .enter().append("line")
+            .attr('marker-end', 'url(#arrowhead)')  // Add marker-end attribute to draw arrowhead
+            .attr("class", "link");
 
         var label = g.append("g")
             .attr("class", "labels")
