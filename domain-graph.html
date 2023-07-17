@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Domain Graph v6</title>
+    <title>Domain Graph v8</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
         .link {
@@ -51,10 +51,10 @@
             link.source.count++;
             link.target.count++;
             if (!(link.source.tld in tlds)) {
-                tlds[link.source.tld] = `#${Math.floor(Math.random()*16777215).toString(16)}`;  // assign a random color to each top-level domain
+                tlds[link.source.tld] = d3.hsl(Math.random() * 360, 0.5, Math.random() * 0.4 + 0.6);  // assign a random light color to each top-level domain
             }
             if (!(link.target.tld in tlds)) {
-                tlds[link.target.tld] = `#${Math.floor(Math.random()*16777215).toString(16)}`;  // assign a random color to each top-level domain
+                tlds[link.target.tld] = d3.hsl(Math.random() * 360, 0.5, Math.random() * 0.4 + 0.6);  // assign a random light color to each top-level domain
             }
         });
 
@@ -72,7 +72,7 @@
             .enter().append("circle")
             .attr("class", "node")
             .attr("r", function(d) { return Math.sqrt(d.count) * 2; })  // set radius based on count
-            .attr("fill", function(d) { return tlds[d.tld]; })  // color nodes based on top-level domain
+            .attr("fill", function(d) { return tlds[d.tld]; })  // color nodes based on top-level domain with light colors
             .call(d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
