@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v10</title>
+  <title>Image Graph v11</title>
   <style>
     body {
       background: url('clouds.jpg') repeat; /* replace 'clouds.jpg' with the URL of your cloud-filled background image */
@@ -22,7 +22,7 @@
       font-size: 12px;
       text-align: center;
       width: 252px;
-      height: 352px;
+      height: 362px;  /* adjusted height */
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -69,7 +69,7 @@
   var data = [];
   var dataIndex = 0;
   var loading = false;
-  var rowHeight = 352 + 10; // height of an image card + grid gap
+  var rowHeight = 362 + 10; // height of an image card + grid gap, consistent with CSS
   var numRowsToLoad = Math.ceil(window.innerHeight / rowHeight) + 5; // number of rows to load to fill the viewport, plus a few extra rows
 
   /* (the rest of the JavaScript part remains the same) */
