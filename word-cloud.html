@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Word Cloud v6</title>
+  <title>Word Cloud v8</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/d3-cloud"></script>
   <style>
@@ -32,7 +32,7 @@
       layout.start();
 
       function draw(words) {
-        svg.append('g')
+        var wordElements = svg.append('g')
           .attr('transform', 'translate(' + [width / 2, height / 2] + ')')
           .selectAll('text')
           .data(words)
@@ -44,8 +44,11 @@
           .attr('transform', function(d) { return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')'; })
           .text(function(d) { return d.text; })
           .on('click', function(d) { 
-            // On click, regenerate the word cloud with the clicked word in the center
-            layout.words([d]).start();
+            // On click, increase the size of the clicked word and decrease the size of others
+            wordElements
+              .transition()
+              .duration(1000)
+              .style('font-size', function(dw) { return dw === d ? '50px' : '20px'; });
           });
       }
     });
