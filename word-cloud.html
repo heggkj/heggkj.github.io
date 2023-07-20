@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Word Cloud v1</title>
+  <title>Word Cloud v2</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/d3-cloud"></script>
   <style>
-    body { font-family: Impact; }
+    body { font-family: Impact; overflow: hidden; margin: 0px; background: #fff; }
     text { cursor: default; }
-    text:hover { fill: red; }
   </style>
 </head>
 <body>
   <script>
-    var width = 800;
-    var height = 400;
+    // Use the full page size
+    var width = window.innerWidth;
+    var height = window.innerHeight;
 
     var svg = d3.select('body').append('svg')
       .attr('width', width)
@@ -24,7 +24,7 @@
         .size([width, height])
         .words(data)
         .padding(5)
-        .rotate(function() { return ~~(Math.random() * 6) - 3 * 30; })
+        .rotate(0) // Make words horizontal
         .font('Impact')
         .fontSize(function(d) { return d.size; })
         .on('end', draw);
@@ -39,9 +39,11 @@
           .enter().append('text')
           .style('font-size', function(d) { return d.size + 'px'; })
           .style('font-family', 'Impact')
+          .style('fill', function() { return 'hsl(' + Math.random() * 360 + ',100%,50%)'; }) // Random color
           .attr('text-anchor', 'middle')
           .attr('transform', function(d) { return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')'; })
-          .text(function(d) { return d.text; });
+          .text(function(d) { return d.text; })
+          .on('click', function() { this.style.fill = 'hsl(' + Math.random() * 360 + ',100%,50%)'; }); // Change color on click
       }
     });
   </script>
