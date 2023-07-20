@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Word Cloud v2</title>
+  <title>Word Cloud v3</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/d3-cloud"></script>
   <style>
     body { font-family: Impact; overflow: hidden; margin: 0px; background: #fff; }
     text { cursor: default; }
+    .highlight { stroke: black; stroke-width: 0.5px; }
   </style>
 </head>
 <body>
@@ -20,11 +21,13 @@
       .attr('height', height);
 
     d3.csv('word_freq.csv').then(function(data) {
+      data = data.filter(function(d) { return d.text.length >= 3 && +d.size >= 3; });  // Filter words
+
       var layout = d3.layout.cloud()
         .size([width, height])
         .words(data)
         .padding(5)
-        .rotate(0) // Make words horizontal
+        .rotate(0)  // Make words horizontal
         .font('Impact')
         .fontSize(function(d) { return d.size; })
         .on('end', draw);
@@ -33,17 +36,17 @@
 
       function draw(words) {
         svg.append('g')
-          .attr('transform', 'translate(' + [width >> 1, height >> 1] + ')')
+          .attr('transform', 'translate(' + [width / 2, height / 2] + ')')
           .selectAll('text')
           .data(words)
           .enter().append('text')
           .style('font-size', function(d) { return d.size + 'px'; })
           .style('font-family', 'Impact')
-          .style('fill', function() { return 'hsl(' + Math.random() * 360 + ',100%,50%)'; }) // Random color
+          .style('fill', function() { return 'hsl(' + Math.random() * 360 + ',100%,50%)'; })  // Random color
           .attr('text-anchor', 'middle')
           .attr('transform', function(d) { return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')'; })
           .text(function(d) { return d.text; })
-          .on('click', function() { this.style.fill = 'hsl(' + Math.random() * 360 + ',100%,50%)'; }); // Change color on click
+          .on('click', function() { d3.select(this).classed('highlight', !d3.select(this).classed('highlight')); });  // Toggle highlight on click
       }
     });
   </script>
