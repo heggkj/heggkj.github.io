@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Cloud v1</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://unpkg.com/d3-cloud"></script>
+  <style>
+    body { font-family: Impact; }
+    text { cursor: default; }
+    text:hover { fill: red; }
+  </style>
+</head>
+<body>
+  <script>
+    var width = 800;
+    var height = 400;
+
+    var svg = d3.select('body').append('svg')
+      .attr('width', width)
+      .attr('height', height);
+
+    d3.csv('word_freq.csv').then(function(data) {
+      var layout = d3.layout.cloud()
+        .size([width, height])
+        .words(data)
+        .padding(5)
+        .rotate(function() { return ~~(Math.random() * 6) - 3 * 30; })
+        .font('Impact')
+        .fontSize(function(d) { return d.size; })
+        .on('end', draw);
+
+      layout.start();
+
+      function draw(words) {
+        svg.append('g')
+          .attr('transform', 'translate(' + [width >> 1, height >> 1] + ')')
+          .selectAll('text')
+          .data(words)
+          .enter().append('text')
+          .style('font-size', function(d) { return d.size + 'px'; })
+          .style('font-family', 'Impact')
+          .attr('text-anchor', 'middle')
+          .attr('transform', function(d) { return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')'; })
+          .text(function(d) { return d.text; });
+      }
+    });
+  </script>
+</body>
+</html>
