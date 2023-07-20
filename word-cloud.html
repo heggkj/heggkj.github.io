@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Word Cloud v3</title>
+  <title>Word Cloud v6</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/d3-cloud"></script>
   <style>
-    body { font-family: Impact; overflow: hidden; margin: 0px; background: #fff; }
+    body { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; overflow: hidden; margin: 0px; background: #fff; }
     text { cursor: default; }
-    .highlight { stroke: black; stroke-width: 0.5px; }
   </style>
 </head>
 <body>
@@ -21,14 +20,12 @@
       .attr('height', height);
 
     d3.csv('word_freq.csv').then(function(data) {
-      data = data.filter(function(d) { return d.text.length >= 3 && +d.size >= 3; });  // Filter words
-
       var layout = d3.layout.cloud()
         .size([width, height])
         .words(data)
         .padding(5)
         .rotate(0)  // Make words horizontal
-        .font('Impact')
+        .font('Comic Sans MS')  // Use a fun typescript
         .fontSize(function(d) { return d.size; })
         .on('end', draw);
 
@@ -41,12 +38,15 @@
           .data(words)
           .enter().append('text')
           .style('font-size', function(d) { return d.size + 'px'; })
-          .style('font-family', 'Impact')
+          .style('font-family', 'Comic Sans MS')
           .style('fill', function() { return 'hsl(' + Math.random() * 360 + ',100%,50%)'; })  // Random color
           .attr('text-anchor', 'middle')
           .attr('transform', function(d) { return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')'; })
           .text(function(d) { return d.text; })
-          .on('click', function() { d3.select(this).classed('highlight', !d3.select(this).classed('highlight')); });  // Toggle highlight on click
+          .on('click', function(d) { 
+            // On click, regenerate the word cloud with the clicked word in the center
+            layout.words([d]).start();
+          });
       }
     });
   </script>
