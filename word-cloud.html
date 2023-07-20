@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Word Cloud v8</title>
+  <title>Word Cloud v9</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/d3-cloud"></script>
   <style>
@@ -23,10 +23,10 @@
       var layout = d3.layout.cloud()
         .size([width, height])
         .words(data)
-        .padding(5)
+        .padding(1)  // Smaller padding to make words closer together
         .rotate(0)  // Make words horizontal
         .font('Comic Sans MS')  // Use a fun typescript
-        .fontSize(function(d) { return d.size; })
+        .fontSize(function(d) { return 2 * d.size; })  // Bigger text size
         .on('end', draw);
 
       layout.start();
@@ -44,11 +44,13 @@
           .attr('transform', function(d) { return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')'; })
           .text(function(d) { return d.text; })
           .on('click', function(d) { 
-            // On click, increase the size of the clicked word and decrease the size of others
-            wordElements
+            // On click, increase the size of the clicked word, make it bolder, and bring it to front
+            d3.select(this)
               .transition()
               .duration(1000)
-              .style('font-size', function(dw) { return dw === d ? '50px' : '20px'; });
+              .style('font-size', '60px')  // Large size on click
+              .style('font-weight', 'bold');  // Bold on click
+            this.parentNode.appendChild(this);  // Bring to front
           });
       }
     });
