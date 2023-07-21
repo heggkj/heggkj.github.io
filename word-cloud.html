@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Word Cloud v11</title>
+  <title>Word Cloud v12</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/d3-cloud"></script>
   <style>
     body { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; overflow: hidden; margin: 0px; background: #fff; }
     text { cursor: default; }
-    svg { border: 5px solid black; }  // Increased border size for visibility
   </style>
 </head>
 <body>
@@ -33,6 +32,8 @@
       layout.start();
 
       function draw(words) {
+        var lastClicked;
+
         var wordElements = svg.append('g')
           .attr('transform', 'translate(' + [width / 2, height / 2] + ')')
           .selectAll('text')
@@ -48,12 +49,21 @@
           .on('mouseout', function() { d3.select(this).style('font-weight', 'normal'); })  // Normal weight when not hovering
           .on('click', function(d) { 
             // On click, increase the size of the clicked word, make it bolder, and bring it to front
-            wordElements
+            if (lastClicked) {
+              d3.select(lastClicked)
+                .transition()
+                .duration(1000)
+                .style('font-size', lastClicked.__data__.size + 'px')  // Original size
+                .style('font-weight', 'normal');  // Normal weight
+            }
+
+            d3.select(this)
               .transition()
               .duration(1000)
-              .style('font-size', function(dw) { return dw === d ? '60px' : (2 * dw.size + 'px'); })  // Large size on click, original size otherwise
-              .style('font-weight', function(dw) { return dw === d ? 'bold' : 'normal'; });  // Bold on click, normal weight otherwise
-            this.parentNode.appendChild(this);  // Bring to front
+              .style('font-size', '60px')  // Large size on click
+              .style('font-weight', 'bold');  // Bold on click
+
+            lastClicked = this;
           });
       }
     });
