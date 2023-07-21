@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Word Cloud v12</title>
+  <title>Word Cloud v13</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/d3-cloud"></script>
   <style>
@@ -40,7 +40,7 @@
           .data(words)
           .enter().append('text')
           .style('font-size', function(d) { return d.size + 'px'; })
-          .style('font-family', 'Comic Sans MS')
+          .style('font-family', 'Chalkboard SE')
           .style('fill', function() { return 'hsl(' + Math.random() * 360 + ',100%,50%)'; })  // Random color
           .attr('text-anchor', 'middle')
           .attr('transform', function(d) { return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')'; })
@@ -64,6 +64,7 @@
               .style('font-weight', 'bold');  // Bold on click
 
             lastClicked = this;
+            this.parentNode.appendChild(this);  // Bring to front
           });
       }
     });
