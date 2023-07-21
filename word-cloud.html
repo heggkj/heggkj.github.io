@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Word Cloud v13</title>
+  <title>Word Cloud v14</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/d3-cloud"></script>
   <style>
@@ -26,7 +26,7 @@
         .padding(1)  // Smaller padding to make words closer together
         .rotate(0)  // Make words horizontal
         .font('Comic Sans MS')  // Use a fun typescript
-        .fontSize(function(d) { return 2 * d.size; })  // Bigger text size
+        .fontSize(function(d) { return 5 * d.size; })  // Bigger text size
         .on('end', draw);
 
       layout.start();
@@ -40,7 +40,7 @@
           .data(words)
           .enter().append('text')
           .style('font-size', function(d) { return d.size + 'px'; })
-          .style('font-family', 'Chalkboard SE')
+          .style('font-family', 'Comic Sans MS')
           .style('fill', function() { return 'hsl(' + Math.random() * 360 + ',100%,50%)'; })  // Random color
           .attr('text-anchor', 'middle')
           .attr('transform', function(d) { return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')'; })
@@ -53,14 +53,14 @@
               d3.select(lastClicked)
                 .transition()
                 .duration(1000)
-                .style('font-size', lastClicked.__data__.size + 'px')  // Original size
+                .style('font-size', function(dw) { return 5 * dw.size + 'px'; })  // Original size
                 .style('font-weight', 'normal');  // Normal weight
             }
 
             d3.select(this)
               .transition()
               .duration(1000)
-              .style('font-size', '60px')  // Large size on click
+              .style('font-size', '100px')  // Large size on click
               .style('font-weight', 'bold');  // Bold on click
 
             lastClicked = this;
