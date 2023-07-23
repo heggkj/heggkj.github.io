@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Graph v19</title>
+  <style>
+    body {
+      background: url('clouds.jpg') repeat; /* replace 'clouds.jpg' with the URL of your cloud-filled background image */
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(252px, 1fr)); /* each card is now four times as big */
+      grid-gap: 10px; /* padding between cards */
+      padding: 10px;
+      background-color: transparent; /* background is transparent to show the body's background */
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #888; /* change border color to medium gray */
+      padding: 5px; /* reduced padding */
+      font-size: 12px;
+      text-align: center;
+      width: 252px;
+      height: 362px;  /* adjusted height */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .grid-item a.image-link {
+      width: 100%;
+      height: calc(100% - 2em - 10px); /* adjusted for the reduced padding */
+      display: block; /* to allow width and height to take effect */
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 100%; /* make the image fill its parent <a> tag */
+      object-fit: cover;
+    }
+
+    .grid-item .domain {
+      font-size: 10px;
+      color: #888;
+      text-align: left;
+    }
+
+    .grid-item a {
+      color: black;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      margin-top: 5px; /* add some space between the image and the text */
+    }
+
+    .grid-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<h1><a href="https://jmubreeze.org" style="color: black; text-decoration: none;">Sample Images from the JMU Breeze</a></h1>
+
+<div class="grid-container" id="grid-container">
+  <!-- JavaScript will insert the grid items here -->
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>
+  var container = document.getElementById('grid-container');
+  var data = [];
+  var dataIndex = 0;
+
+  function getDomain(url) {
+    // Extract domain from URL
+    var a = document.createElement('a');
+    a.href = url;
+    return a.hostname;
+  }
+
+  function loadImages(numImages) {
+    for (var i = 0; i < numImages && dataIndex < data.length; i++) {
+      var item = data[dataIndex];
+
+      var gridItem = document.createElement('div');
+      gridItem.className = 'grid-item';
+
+      var domain = document.createElement('a');
+      domain.textContent = getDomain(item.url);
+      domain.href = item.source;
+      domain.className = 'domain';
+
+      var imgLink = document.createElement('a');
+      imgLink.href = item.url;
+      imgLink.target = "_blank"; /* make the link open in a new tab */
+      imgLink.className = 'image-link'; /* add a class to the <a> tag for styling */
+
+      var img = document.createElement('img');
+      img.src = item.url;
+      img.alt = item.alt_text;
+
+      imgLink.appendChild(img); /* make the image linkable */
+
+      var a = document.createElement('a');
+      a.href = item.source;
+      a.textContent = item.alt_text;
+
+      gridItem.appendChild(domain);
+      gridItem.appendChild(imgLink); /* add the linkable image to the grid item */
+      gridItem.appendChild(a);
+
+      container.appendChild(gridItem);
+
+      dataIndex++;
+    }
+  }
+
+  window.onscroll = function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      loadImages(15); // load 15 more images when the scrollbar reaches the bottom
+    }
+  };
+
+  d3.csv("image-graph-the-breeze.csv").then(function(fetchedData) {
+    data = fetchedData;
+    loadImages(25); // load 25 images at the start
+  }).catch(function(error) {
+    console.log(error);
+  });
+</script>
+
+</body>
+</html>
