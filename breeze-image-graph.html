@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v21</title>
+  <title>Image Graph v22</title>
   <style>
     body {
       background: url('clouds.jpg') repeat;
@@ -88,6 +88,7 @@
 
       var a = document.createElement('a');
       a.href = item.source;
+      a.target = "_blank";
       a.textContent = item.alt_text;
 
       gridItem.appendChild(imgLink);
