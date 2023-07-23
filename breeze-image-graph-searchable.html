@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Graph v23</title>
+  <style>
+    /* ... rest of your styles ... */
+  </style>
+</head>
+<body>
+
+<h1><a href="https://jmubreeze.org" style="color: black; text-decoration: none;">Sample Images from the JMU Breeze</a></h1>
+
+<input type="text" id="search" placeholder="Search images...">
+
+<div class="grid-container" id="grid-container"></div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>
+  var container = document.getElementById('grid-container');
+  var data = [];
+  var dataIndex = 0;
+
+  function loadImages(numImages) {
+    container.innerHTML = '';
+    dataIndex = 0;
+    var searchValue = document.getElementById('search').value.toLowerCase();
+
+    for (var i = 0; i < numImages && dataIndex < data.length; i++) {
+      var item = data[dataIndex];
+
+      if (item.alt_text.toLowerCase().includes(searchValue)) {
+        var gridItem = document.createElement('div');
+        gridItem.className = 'grid-item';
+
+        var imgLink = document.createElement('a');
+        imgLink.href = item.url;
+        imgLink.target = "_blank";
+        imgLink.className = 'image-link';
+
+        var img = document.createElement('img');
+        img.src = item.url;
+        img.alt = item.alt_text;
+
+        imgLink.appendChild(img);
+
+        var a = document.createElement('a');
+        a.href = item.source;
+        a.target = "_blank";
+        a.textContent = item.alt_text;
+
+        gridItem.appendChild(imgLink);
+        gridItem.appendChild(a);
+
+        container.appendChild(gridItem);
+      }
+
+      dataIndex++;
+    }
+  }
+
+  window.onscroll = function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      loadImages(15);
+    }
+  };
+
+  document.getElementById('search').addEventListener('input', function() {
+    loadImages(25);
+  });
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  d3.csv("image-graph-the-breeze.csv").then(function(fetchedData) {
+    data = fetchedData;
+    shuffleArray(data);
+    loadImages(25);
+  }).catch(function(error) {
+    console.log(error);
+  });
+</script>
+
+</body>
+</html>
