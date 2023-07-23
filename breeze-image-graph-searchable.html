@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v31</title>
+  <title>Image Graph v32</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
   <style>
@@ -88,12 +88,15 @@
 <script>
   var container = document.getElementById('grid-container');
   var data = [];
+  var dataIndex = 0;
 
-  function loadImages(numImages) {
-    container.innerHTML = '';
+  function loadImages(numImages, clearContainer) {
+    if (clearContainer) {
+      container.innerHTML = '';
+      dataIndex = 0;
+    }
     var searchValue = document.getElementById('search').value.toLowerCase();
     var imagesAdded = 0;
-    var dataIndex = 0;
 
     while (imagesAdded < numImages && dataIndex < data.length) {
       var item = data[dataIndex];
@@ -133,13 +136,13 @@
   window.onscroll = function() {
     if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 50) && !loading) {
       loading = true;
-      loadImages(15);
+      loadImages(15, false);
       loading = false;
     }
   };
 
   document.getElementById('search').addEventListener('input', function() {
-    loadImages(25);
+    loadImages(25, true);
   });
 
   function shuffleArray(array) {
@@ -152,7 +155,7 @@
   d3.csv("image-graph-the-breeze.csv").then(function(fetchedData) {
     data = fetchedData;
     shuffleArray(data);
-    loadImages(25);
+    loadImages(25, true);
   }).catch(function(error) {
     console.log(error);
   });
