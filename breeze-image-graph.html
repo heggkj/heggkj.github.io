@@ -1,9 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v20</title>
+  <title>Image Graph v21</title>
   <style>
-    /* ... rest of your styles ... */
+    body {
+      background: url('clouds.jpg') repeat;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(252px, 1fr));
+      grid-gap: 10px;
+      padding: 10px;
+      background-color: transparent;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #888;
+      padding: 5px;
+      font-size: 12px;
+      text-align: center;
+      width: 252px;
+      min-height: 362px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .grid-item a.image-link {
+      width: 100%;
+      height: calc(100% - 2em - 10px);
+      display: block;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .grid-item a {
+      color: black;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      margin-top: 5px;
+    }
+
+    .grid-item a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
