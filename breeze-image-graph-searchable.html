@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v32</title>
+  <title>Image Graph v33</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
   <style>
@@ -71,13 +71,29 @@
       justify-content: space-between;
       align-items: center;
     }
+
+    .search-container {
+      position: relative;
+      display: flex;
+    }
+
+    .clear-search {
+      position: absolute;
+      right: 1em;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
 
 <div class="header-container">
   <h1><a href="https://breezejmu.org/" style="color: black; text-decoration: none;">Wall of Images from JMU's Breeze</a></h1>
-  <input type="text" id="search" placeholder="Search images...">
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search images...">
+    <div id="clear-search" class="clear-search">x</div>
+  </div>
 </div>
 
 <div class="grid-container" id="grid-container">
@@ -142,6 +158,11 @@
   };
 
   document.getElementById('search').addEventListener('input', function() {
+    loadImages(25, true);
+  });
+
+  document.getElementById('clear-search').addEventListener('click', function() {
+    document.getElementById('search').value = '';
     loadImages(25, true);
   });
 
