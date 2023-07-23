@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v25</title>
+  <title>Image Graph v26</title>
   <!-- ... rest of the head ... -->
 </head>
 <body>
@@ -19,12 +19,12 @@
 <script>
   var container = document.getElementById('grid-container');
   var data = [];
-  var dataIndex = 0;
 
   function loadImages(numImages) {
     container.innerHTML = '';
     var searchValue = document.getElementById('search').value.toLowerCase();
     var imagesAdded = 0;
+    var dataIndex = 0; // reset dataIndex whenever loadImages is called
 
     while (imagesAdded < numImages && dataIndex < data.length) {
       var item = data[dataIndex];
