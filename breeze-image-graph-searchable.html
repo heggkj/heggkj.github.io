@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Graph v29</title>
+  <title>Image Graph v31</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
   <style>
     body {
       font-family: 'PT Serif', serif;
@@ -83,6 +84,7 @@
 </div>
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 <script>
   var container = document.getElementById('grid-container');
   var data = [];
@@ -102,7 +104,7 @@
 
         var imgLink = document.createElement('a');
         imgLink.href = item.url;
-        imgLink.target = "_blank";
+        imgLink.setAttribute('data-lightbox', 'image-' + dataIndex);
         imgLink.className = 'image-link';
 
         var img = document.createElement('img');
@@ -127,9 +129,12 @@
     }
   }
 
+  var loading = false;
   window.onscroll = function() {
-    if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2) {
+    if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 50) && !loading) {
+      loading = true;
       loadImages(15);
+      loading = false;
     }
   };
 
