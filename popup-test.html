@@ -38,11 +38,15 @@
             background-color: transparent; /* Make the background transparent */
             border-radius: 5px;
             width: 80%; /* Make the video container 80% of the viewport width */
+            height: 60vh; /* Set a fixed height for the video container */
+            max-height: 80%; /* Set a maximum height to prevent video overflow */
+            overflow: hidden; /* Hide any overflowing video content */
         }
 
         video {
             width: 100%; /* Make the video fill the container */
-            height: auto; /* Maintain aspect ratio */
+            height: 100%; /* Make the video fill the container */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
         }
 
         .close-btn {
@@ -59,6 +63,12 @@
             line-height: 30px;
             border-radius: 50%;
         }
+
+        .content {
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -72,6 +82,15 @@
                 </video>
             </div>
         </div>
+    </div>
+
+    <div class="content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit justo ut justo consequat, ac volutpat erat condimentum. Vestibulum nec tellus id purus aliquam facilisis.
+        </p>
+        <p>
+            Nulla facilisi. Etiam fringilla tortor et metus placerat, non feugiat mauris ultricies. Vestibulum ac metus vel nisl aliquet dignissim. Ut vestibulum elit sit amet libero posuere fringilla. Donec euismod lacinia eros, quis accumsan felis consectetur vel. Aliquam consectetur, tellus ac gravida rhoncus, quam dolor dapibus metus, quis sollicitudin elit elit at nulla. Ut sit amet tristique justo. Vivamus interdum felis sed varius rutrum.
+        </p>
     </div>
 
     <script>
