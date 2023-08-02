@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Popup Test v2.0</title>
+    <title>My Popup Test v3.0</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <style>
         body {
@@ -38,7 +38,7 @@
 </head>
 <body>
     <div class="center-content">
-        <a href="https://www.youtube.com/watch?v=6cUe4oMk69E" class="popup-youtube">Open Video</a>
+        <a href="https://www.youtube.com/watch?v=6cUe4oMk69E" class="popup-youtube" id="popupLink">Open Video</a>
     </div>
 
     <div class="content">
@@ -54,19 +54,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Initialize Magnific Popup
-            $('.popup-youtube').magnificPopup({
-                type: 'iframe',
-                iframe: {
-                    patterns: {
-                        youtube: {
-                            index: 'youtube.com/',
-                            id: 'v=',
-                            src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+            // Check if the video has been shown before using localStorage
+            const hasShownVideo = localStorage.getItem("hasShownVideo");
+
+            if (!hasShownVideo) {
+                // Show the popup if the video hasn't been shown before
+                $.magnificPopup.open({
+                    items: {
+                        src: "https://www.youtube.com/watch?v=6cUe4oMk69E"
+                    },
+                    type: "iframe",
+                    mainClass: "mfp-fade",
+                    removalDelay: 160,
+                    preloader: false,
+                    callbacks: {
+                        beforeClose: function() {
+                            // Set a cookie to indicate that the video has been shown
+                            localStorage.setItem("hasShownVideo", true);
                         }
                     }
-                }
-            });
+                });
+            }
         });
     </script>
 </body>
