@@ -36,12 +36,14 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: #fff;
-            padding: 20px;
+            padding: 0; /* Remove padding for larger video */
             border-radius: 5px;
+            width: 80%; /* Make the video container 80% of the viewport width */
         }
 
         video {
-            width: 100%; /* Make the video fill the popup */
+            width: 100%; /* Make the video fill the container */
+            height: auto; /* Maintain aspect ratio */
         }
 
         .close-btn {
@@ -66,7 +68,7 @@
             <div class="video-container">
                 <div class="close-btn" id="closeBtn">X</div>
                 <video controls autoplay> <!-- Added 'autoplay' attribute -->
-                    <source src="https://www.youtube.com/watch?v=6cUe4oMk69E" type="video/mp4">
+                    <source src="https://www.youtube.com/embed/6cUe4oMk69E" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
