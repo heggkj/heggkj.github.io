@@ -53,4 +53,56 @@
             text-decoration: none;
             text-align: center;
             opacity: 0.65;
-           
+            filter: alpha(opacity=65);
+            -webkit-transition: opacity 0.2s ease-out;
+            -moz-transition: opacity 0.2s ease-out;
+            -o-transition: opacity 0.2s ease-out;
+            transition: opacity 0.2s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="content" style="visibility: hidden;">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit justo ut justo consequat, ac volutpat erat condimentum. Vestibulum nec tellus id purus aliquam facilisis.
+        </p>
+        <p>
+            Nulla facilisi. Etiam fringilla tortor et metus placerat, non feugiat mauris ultricies. Vestibulum ac metus vel nisl aliquet dignissim. Ut vestibulum elit sit amet libero posuere fringilla. Donec euismod lacinia eros, quis accumsan felis consectetur vel. Aliquam consectetur, tellus ac gravida rhoncus, quam dolor dapibus metus, quis sollicitudin elit elit at nulla. Ut sit amet tristique justo. Vivamus interdum felis sed varius rutrum.
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Check if cookies are enabled
+            if (navigator.cookieEnabled) {
+                // Check if the video has been shown before using localStorage
+                const hasShownVideo = localStorage.getItem("hasShownVideo");
+
+                if (!hasShownVideo) {
+                    $.magnificPopup.open({
+                        items: {
+                            src: 'https://www.youtube.com/watch?v=6cUe4oMk69E?autoplay=1'
+                        },
+                        type: 'iframe',
+                        mainClass: 'mfp-fade',
+                        removalDelay: 160,
+                        preloader: false,
+                        fixedContentPos: false,
+                        closeBtnInside: true,  /* Adding a close button inside the popup */
+                        callbacks: {
+                            close: function() {
+                                localStorage.setItem("hasShownVideo", true);
+                                $('.content').css('visibility', 'visible');
+                            }
+                        }
+                    });
+                } else {
+                    $('.content').css('visibility', 'visible');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
