@@ -76,18 +76,15 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Check if the browser allows cookies
-            if (navigator.cookieEnabled) {
-                // Show the lightbox if cookies are enabled
-                const lightbox = document.getElementById("lightbox");
-                lightbox.style.display = "block";
+            // Show the lightbox unconditionally
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "block";
 
-                // Add event listener to the close button
-                const closeBtn = document.getElementById("closeBtn");
-                closeBtn.addEventListener("click", function() {
-                    lightbox.style.display = "none";
-                });
-            }
+            // Add event listener to the close button
+            const closeBtn = document.getElementById("closeBtn");
+            closeBtn.addEventListener("click", function() {
+                lightbox.style.display = "none";
+            });
         });
     </script>
 </body>
