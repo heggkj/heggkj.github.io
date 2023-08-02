@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Popup Test v3.0</title>
+    <title>My Popup Test v4.0</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <style>
         body {
@@ -25,22 +25,9 @@
             text-align: center;
             padding: 20px;
         }
-
-        .popup-youtube {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
     </style>
 </head>
 <body>
-    <div class="center-content">
-        <a href="https://www.youtube.com/watch?v=6cUe4oMk69E" class="popup-youtube" id="popupLink">Open Video</a>
-    </div>
-
     <div class="content">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit justo ut justo consequat, ac volutpat erat condimentum. Vestibulum nec tellus id purus aliquam facilisis.
@@ -54,26 +41,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Check if the video has been shown before using localStorage
-            const hasShownVideo = localStorage.getItem("hasShownVideo");
+            // Check if cookies are enabled
+            if (navigator.cookieEnabled) {
+                // Check if the video has been shown before using localStorage
+                const hasShownVideo = localStorage.getItem("hasShownVideo");
 
-            if (!hasShownVideo) {
-                // Show the popup if the video hasn't been shown before
-                $.magnificPopup.open({
-                    items: {
-                        src: "https://www.youtube.com/watch?v=6cUe4oMk69E"
-                    },
-                    type: "iframe",
-                    mainClass: "mfp-fade",
-                    removalDelay: 160,
-                    preloader: false,
-                    callbacks: {
-                        beforeClose: function() {
-                            // Set a cookie to indicate that the video has been shown
-                            localStorage.setItem("hasShownVideo", true);
+                if (!hasShownVideo) {
+                    // Show the popup if the video hasn't been shown before
+                    $.magnificPopup.open({
+                        items: {
+                            src: "https://www.youtube.com/watch?v=6cUe4oMk69E"
+                        },
+                        type: "iframe",
+                        mainClass: "mfp-fade",
+                        removalDelay: 160,
+                        preloader: false,
+                        callbacks: {
+                            beforeClose: function() {
+                                // Set a cookie to indicate that the video has been shown
+                                localStorage.setItem("hasShownVideo", true);
+                            }
                         }
-                    }
-                });
+                    });
+                }
             }
         });
     </script>
