@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Popup Test v4.3</title>
+    <title>My Popup Test v4.4</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <style>
         body {
@@ -21,7 +21,7 @@
         }
 
         .mfp-iframe-holder .mfp-content {
-            max-width: 60%;
+            max-width: 80%;  /* Increasing the max-width to make the video larger */
             width: 100%;
         }
 
@@ -42,49 +42,15 @@
             width: 100%;
             height: 100%;
         }
-    </style>
-</head>
-<body>
-    <div class="content" style="visibility: hidden;">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit justo ut justo consequat, ac volutpat erat condimentum. Vestibulum nec tellus id purus aliquam facilisis.
-        </p>
-        <p>
-            Nulla facilisi. Etiam fringilla tortor et metus placerat, non feugiat mauris ultricies. Vestibulum ac metus vel nisl aliquet dignissim. Ut vestibulum elit sit amet libero posuere fringilla. Donec euismod lacinia eros, quis accumsan felis consectetur vel. Aliquam consectetur, tellus ac gravida rhoncus, quam dolor dapibus metus, quis sollicitudin elit elit at nulla. Ut sit amet tristique justo. Vivamus interdum felis sed varius rutrum.
-        </p>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Check if cookies are enabled
-            if (navigator.cookieEnabled) {
-                // Check if the video has been shown before using localStorage
-                const hasShownVideo = localStorage.getItem("hasShownVideo");
-
-                if (!hasShownVideo) {
-                    $.magnificPopup.open({
-                        items: {
-                            src: 'https://www.youtube.com/watch?v=6cUe4oMk69E'
-                        },
-                        type: 'iframe',
-                        mainClass: 'mfp-fade',
-                        removalDelay: 160,
-                        preloader: false,
-                        fixedContentPos: false,
-                        callbacks: {
-                            close: function() {
-                                localStorage.setItem("hasShownVideo", true);
-                                $('.content').css('visibility', 'visible');
-                            }
-                        }
-                    });
-                } else {
-                    $('.content').css('visibility', 'visible');
-                }
-            }
-        });
-    </script>
-</body>
-</html>
+        .mfp-close {
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-decoration: none;
+            text-align: center;
+            opacity: 0.65;
+           
