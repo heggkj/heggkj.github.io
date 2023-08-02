@@ -27,12 +27,12 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: #fff;
-            padding: 20px;
+            padding: 30px; /* Increase padding for larger popup */
             border-radius: 5px;
         }
 
         video {
-            width: 100%;
+            width: 100%; /* Make the video fill the popup */
         }
 
         button {
@@ -42,9 +42,15 @@
     </style>
 </head>
 <body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit justo ut justo consequat, ac volutpat erat condimentum. Vestibulum nec tellus id purus aliquam facilisis.
+    </p>
+    <p>
+        Nulla facilisi. Etiam fringilla tortor et metus placerat, non feugiat mauris ultricies. Vestibulum ac metus vel nisl aliquet dignissim. Ut vestibulum elit sit amet libero posuere fringilla. Donec euismod lacinia eros, quis accumsan felis consectetur vel. Aliquam consectetur, tellus ac gravida rhoncus, quam dolor dapibus metus, quis sollicitudin elit elit at nulla. Ut sit amet tristique justo. Vivamus interdum felis sed varius rutrum.
+    </p>
     <div id="lightbox" class="lightbox">
         <div class="video-container">
-            <video controls>
+            <video controls autoplay> <!-- Added 'autoplay' attribute -->
                 <source src="https://www.youtube.com/watch?v=6cUe4oMk69E" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
