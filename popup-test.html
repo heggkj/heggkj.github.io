@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Popup Test v4.6</title>
+    <title>My Popup Test v4.7</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <style>
         body {
@@ -62,7 +62,7 @@
     </style>
 </head>
 <body>
-    <div class="content" style="visibility: hidden;">
+    <div class="content">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit justo ut justo consequat, ac volutpat erat condimentum. Vestibulum nec tellus id purus aliquam facilisis.
         </p>
@@ -83,7 +83,7 @@
                 if (!hasShownVideo) {
                     $.magnificPopup.open({
                         items: {
-                            src: 'https://www.youtube.com/embed/6cUe4oMk69E?autoplay=1&mute=1'  /* Using the embed URL with autoplay and mute parameters */
+                            src: 'https://www.youtube.com/embed/6cUe4oMk69E?autoplay=1&mute=0'  /* Using the embed URL with autoplay and mute parameters */
                         },
                         type: 'iframe',
                         mainClass: 'mfp-fade',
@@ -94,12 +94,9 @@
                         callbacks: {
                             close: function() {
                                 localStorage.setItem("hasShownVideo", true);
-                                $('.content').css('visibility', 'visible');
                             }
                         }
                     });
-                } else {
-                    $('.content').css('visibility', 'visible');
                 }
             }
         });
