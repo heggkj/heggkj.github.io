@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Popup Testtt v4.2</title>
+    <title>My Popup Test v4.3</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <style>
         body {
@@ -11,13 +11,6 @@
             padding: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
-        }
-
-        .center-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
 
         .content {
@@ -52,12 +45,7 @@
     </style>
 </head>
 <body>
-    <div class="center-content">
-        <!-- The video container -->
-        <a class="popup-youtube" href="https://www.youtube.com/watch?v=6cUe4oMk69E">Open YouTube Video</a>
-    </div>
-
-    <div class="content">
+    <div class="content" style="visibility: hidden;">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit justo ut justo consequat, ac volutpat erat condimentum. Vestibulum nec tellus id purus aliquam facilisis.
         </p>
@@ -76,7 +64,10 @@
                 const hasShownVideo = localStorage.getItem("hasShownVideo");
 
                 if (!hasShownVideo) {
-                    $('.popup-youtube').magnificPopup({
+                    $.magnificPopup.open({
+                        items: {
+                            src: 'https://www.youtube.com/watch?v=6cUe4oMk69E'
+                        },
                         type: 'iframe',
                         mainClass: 'mfp-fade',
                         removalDelay: 160,
@@ -85,9 +76,12 @@
                         callbacks: {
                             close: function() {
                                 localStorage.setItem("hasShownVideo", true);
+                                $('.content').css('visibility', 'visible');
                             }
                         }
-                    }).magnificPopup('open');
+                    });
+                } else {
+                    $('.content').css('visibility', 'visible');
                 }
             }
         });
