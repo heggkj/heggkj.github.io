@@ -1,3 +1,9 @@
+// Game version
+const GAME_VERSION = "v. 0.1";
+
+// Output the game version to the console
+console.log(`WordFall Game Version: ${GAME_VERSION}`);
+
 // Game constants
 const BOARD_WIDTH = 10;
 const BOARD_HEIGHT = 20;
@@ -19,39 +25,51 @@ d3.csv("filtered_collins_words.csv").then(function(data) {
 });
 
 function initializeGame() {
-    // For simplicity, we'll just select a random morpheme and display it on the game board
+    // Select a random morpheme and display it on the game board
     currentTetrad = getRandomTetrad();
     drawGameBoard();
 }
 
 function getRandomTetrad() {
     let randomMorpheme = morphemes[Math.floor(Math.random() * morphemes.length)].Morpheme;
-    // For now, we'll just return the morpheme as a tetrad (we'll shape and orient it properly later)
     return {
-        shape: randomMorpheme,  // This will be refined later to be an actual shape
+        shape: randomMorpheme,
         position: { x: Math.floor(BOARD_WIDTH / 2), y: 0 }  // Start at the top-middle of the board
     };
 }
 
 function drawGameBoard() {
-    // This function will update the visual game board. For now, it'll just log the current tetrad.
-    console.log(currentTetrad);
+    // Clear previous tetrad display
+    const boardElement = document.getElementById('game-board');
+    boardElement.innerHTML = '';
+
+    // Display current tetrad
+    const tetradElement = document.createElement('div');
+    tetradElement.style.position = 'absolute';
+    tetradElement.style.left = (currentTetrad.position.x * 40) + 'px';  // 40 is arbitrary block size
+    tetradElement.style.top = (currentTetrad.position.y * 40) + 'px';
+    tetradElement.style.width = '40px';
+    tetradElement.style.height = '40px';
+    tetradElement.style.backgroundColor = 'blue';  // Color for the tetrad
+    tetradElement.textContent = currentTetrad.shape;
+    boardElement.appendChild(tetradElement);
 }
 
 // Event listener for arrow keys
 document.addEventListener('keydown', function(event) {
     switch(event.keyCode) {
         case 37: // Left Arrow
-            // Move tetrad left
+            currentTetrad.position.x -= 1;
             break;
         case 39: // Right Arrow
-            // Move tetrad right
+            currentTetrad.position.x += 1;
             break;
         case 40: // Down Arrow
-            // Move tetrad down faster
+            currentTetrad.position.y += 1;
             break;
         case 38: // Up Arrow
-            // Rotate tetrad
+            // Rotation logic will go here in the future
             break;
     }
+    drawGameBoard();  // Update the game board after any movement
 });
