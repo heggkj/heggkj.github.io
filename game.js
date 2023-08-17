@@ -1,5 +1,5 @@
 // Game version
-const GAME_VERSION = "v. 0.2";
+const GAME_VERSION = "v. 0.3";
 console.log(`WordFall Game Version: ${GAME_VERSION}`);
 
 // Game constants
@@ -16,19 +16,18 @@ let dictionary = [];
 d3.csv("morphemes.csv").then(function(data) {
     morphemes = data;
     if (dictionary.length > 0) {
-        initializeGame();  // Ensure game initializes only after both CSVs are loaded
+        initializeGame();
     }
 });
 
 d3.csv("filtered_collins_words.csv").then(function(data) {
     dictionary = data.map(d => d.Word);
     if (morphemes.length > 0) {
-        initializeGame();  // Ensure game initializes only after both CSVs are loaded
+        initializeGame();
     }
 });
 
 function initializeGame() {
-    // Select a random morpheme and display it on the game board
     currentTetrad = getRandomTetrad();
     drawGameBoard();
 }
@@ -36,29 +35,30 @@ function initializeGame() {
 function getRandomTetrad() {
     let randomMorpheme = morphemes[Math.floor(Math.random() * morphemes.length)].Morpheme;
     return {
-        shape: randomMorpheme,
-        position: { x: Math.floor(BOARD_WIDTH / 2), y: 0 }  // Start at the top-middle of the board
+        shape: randomMorpheme.toUpperCase(), // Capitalize the letters
+        position: { x: Math.floor(BOARD_WIDTH / 2) - 1, y: 0 }  // Adjusted starting position
     };
 }
 
 function drawGameBoard() {
-    // Clear previous tetrad display
     const boardElement = document.getElementById('game-board');
     boardElement.innerHTML = '';
-
-    // Display current tetrad
-    const tetradElement = document.createElement('div');
-    tetradElement.style.position = 'absolute';
-    tetradElement.style.left = (currentTetrad.position.x * 40) + 'px';  // 40 is arbitrary block size
-    tetradElement.style.top = (currentTetrad.position.y * 40) + 'px';
-    tetradElement.style.width = '40px';
-    tetradElement.style.height = '40px';
-    tetradElement.style.backgroundColor = 'blue';  // Color for the tetrad
-    tetradElement.textContent = currentTetrad.shape;
-    boardElement.appendChild(tetradElement);
+    for (let i = 0; i < currentTetrad.shape.length; i++) {
+        const blockElement = document.createElement('div');
+        blockElement.style.position = 'absolute';
+        blockElement.style.left = (currentTetrad.position.x + i) * 40 + 'px';  // 40 is block size
+        blockElement.style.top = currentTetrad.position.y * 40 + 'px';
+        blockElement.style.width = '40px';
+        blockElement.style.height = '40px';
+        blockElement.style.backgroundColor = 'blue'; 
+        blockElement.style.border = '1px solid white'; // Added border for clarity between blocks
+        blockElement.textContent = currentTetrad.shape[i];
+        blockElement.style.textAlign = 'center';
+        blockElement.style.lineHeight = '40px';
+        boardElement.appendChild(blockElement);
+    }
 }
 
-// Event listener for arrow keys
 document.addEventListener('keydown', function(event) {
     switch(event.keyCode) {
         case 37: // Left Arrow
@@ -74,5 +74,5 @@ document.addEventListener('keydown', function(event) {
             // Rotation logic will go here in the future
             break;
     }
-    drawGameBoard();  // Update the game board after any movement
+    drawGameBoard();
 });
