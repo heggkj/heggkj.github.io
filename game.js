@@ -1,7 +1,5 @@
 // Game version
-const GAME_VERSION = "v. 0.1";
-
-// Output the game version to the console
+const GAME_VERSION = "v. 0.2";
 console.log(`WordFall Game Version: ${GAME_VERSION}`);
 
 // Game constants
@@ -17,11 +15,16 @@ let dictionary = [];
 // Load the morphemes and dictionary data using D3
 d3.csv("morphemes.csv").then(function(data) {
     morphemes = data;
-    initializeGame();
+    if (dictionary.length > 0) {
+        initializeGame();  // Ensure game initializes only after both CSVs are loaded
+    }
 });
 
 d3.csv("filtered_collins_words.csv").then(function(data) {
     dictionary = data.map(d => d.Word);
+    if (morphemes.length > 0) {
+        initializeGame();  // Ensure game initializes only after both CSVs are loaded
+    }
 });
 
 function initializeGame() {
