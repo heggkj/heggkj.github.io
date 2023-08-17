@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordFall</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .game-container {
+            width: 600px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .game-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .score, .next-tetrad {
+            display: flex;
+            align-items: center;
+        }
+
+        #tetrad-preview {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ddd;
+            margin-left: 10px;
+        }
+
+        .game-board {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ddd;
+            background-color: #e9e9e9;
+            position: relative;
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        .controls ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .controls li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>WordFall</h1>
+
+        <div class="game-info">
+            <div class="score">
+                <label>Score:</label>
+                <span id="score-value">0</span>
+            </div>
+            <div class="next-tetrad">
+                <label>Next:</label>
+                <div id="tetrad-preview"></div>
+            </div>
+        </div>
+
+        <div class="game-board" id="game-board"></div>
+
+        <div class="controls">
+            <p>Controls:</p>
+            <ul>
+                <li><strong>Left Arrow:</strong> Move Left</li>
+                <li><strong>Right Arrow:</strong> Move Right</li>
+                <li><strong>Up Arrow:</strong> Rotate</li>
+                <li><strong>Down Arrow:</strong> Move Down Faster</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
