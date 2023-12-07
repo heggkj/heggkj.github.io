@@ -58,9 +58,13 @@
     <script>
         function processCSV() {
             const fileInput = document.getElementById('csvFileInput');
-            const primaryKey = document.getElementById('primaryKey').value;
-            const multiValue = document.getElementById('multiValue').value;
-            const delimiter = document.getElementById('delimiter').value || ','; // Default delimiter is comma
+            let primaryKey = document.getElementById('primaryKey').value;
+            let multiValue = document.getElementById('multiValue').value;
+            const delimiter = document.getElementById('delimiter').value || ',';
+
+            // Remove quote marks from user-defined column names
+            primaryKey = primaryKey.replace(/["']/g, "");
+            multiValue = multiValue.replace(/["']/g, "");
 
             if (!fileInput.files.length || !primaryKey || !multiValue) {
                 alert("Please upload a file and specify columns.");
@@ -72,6 +76,13 @@
             reader.onload = function(e) {
                 const text = e.target.result;
                 const data = d3.csvParse(text);
+
+                // Check if the specified columns exist
+                if (!data.columns.includes(primaryKey) || !data.columns.includes(multiValue)) {
+                    alert("Error: One or more specified columns were not found.");
+                    return;
+                }
+
                 createHelperCSV(data, primaryKey, multiValue, delimiter);
             };
             reader.readAsText(file);
