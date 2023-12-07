@@ -14,7 +14,7 @@
         h2 {
             color: #007bff;
         }
-        p, label, button {
+        p, label, button, input[type='checkbox'] {
             font-size: 16px;
         }
         input[type='file'], input[type='text'], button {
@@ -43,16 +43,23 @@
         <li>Enter the name of the column that serves as the Primary Key.</li>
         <li>Enter the name of the column containing multi-value data.</li>
         <li>Specify the delimiter used in the multi-value column (e.g., comma, semicolon). If not specified, defaults to a comma.</li>
+        <li>Specify names for the output CSV columns (defaults to "id" and "value").</li>
         <li>Click the "Process CSV" button to generate the helper CSV file.</li>
     </ol>
 
     <input type="file" id="csvFileInput" accept=".csv"><br>
     <label for="primaryKey">Primary Key Column:</label>
-    <input type="text" id="primaryKey"><br>
+    <input type="text" id="primaryKey" onchange="updateOutputHeaders()">
+    <input type="checkbox" id="usePrimaryKey" onchange="useInputAsOutput('primaryKey', 'outputPrimaryKey')"> Use as output column header<br>
     <label for="multiValue">Multi-Value Column:</label>
-    <input type="text" id="multiValue"><br>
+    <input type="text" id="multiValue" onchange="updateOutputHeaders()">
+    <input type="checkbox" id="useMultiValue" onchange="useInputAsOutput('multiValue', 'outputMultiValue')"> Use as output column header<br>
     <label for="delimiter">Delimiter:</label>
     <input type="text" id="delimiter" placeholder="e.g., ;"><br>
+    <label for="outputPrimaryKey">Output Primary Key Column Name:</label>
+    <input type="text" id="outputPrimaryKey" value="id"><br>
+    <label for="outputMultiValue">Output Multi-Value Column Name:</label>
+    <input type="text" id="outputMultiValue" value="value"><br>
     <button onclick="processCSV()">Process CSV</button>
 
     <script>
@@ -61,8 +68,9 @@
             let primaryKey = document.getElementById('primaryKey').value;
             let multiValue = document.getElementById('multiValue').value;
             const delimiter = document.getElementById('delimiter').value || ',';
+            const outputPrimaryKey = document.getElementById('outputPrimaryKey').value || 'id';
+            const outputMultiValue = document.getElementById('outputMultiValue').value || 'value';
 
-            // Remove quote marks from user-defined column names
             primaryKey = primaryKey.replace(/["']/g, "");
             multiValue = multiValue.replace(/["']/g, "");
 
@@ -77,24 +85,26 @@
                 const text = e.target.result;
                 const data = d3.csvParse(text);
 
-                // Check if the specified columns exist
                 if (!data.columns.includes(primaryKey) || !data.columns.includes(multiValue)) {
                     alert("Error: One or more specified columns were not found.");
                     return;
                 }
 
-                createHelperCSV(data, primaryKey, multiValue, delimiter);
+                createHelperCSV(data, primaryKey, multiValue, delimiter, outputPrimaryKey, outputMultiValue);
             };
             reader.readAsText(file);
         }
 
-        function createHelperCSV(data, primaryKey, multiValue, delimiter) {
+        function createHelperCSV(data, primaryKey, multiValue, delimiter, outputPrimaryKey, outputMultiValue) {
             let helperData = [];
             data.forEach(row => {
-                const id = row[primaryKey];
-                const values = row[multiValue].split(delimiter);
-                values.forEach(value => {
-                    helperData.push({ id, value });
+                const primaryKeyValue = row[primaryKey];
+                const multiValues = row[multiValue].split(delimiter);
+                multiValues.forEach(value => {
+                    let helperRow = {};
+                    helperRow[outputPrimaryKey] = primaryKeyValue;
+                    helperRow[outputMultiValue] = value;
+                    helperData.push(helperRow);
                 });
             });
 
@@ -112,6 +122,19 @@
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+        }
+
+        function updateOutputHeaders() {
+            if (document.getElementById('usePrimaryKey').checked) {
+                document.getElementById('outputPrimaryKey').value = document.getElementById('primaryKey').value;
+            }
+            if (document.getElementById('useMultiValue').checked) {
+                document.getElementById('outputMultiValue').value = document.getElementById('multiValue').value;
+            }
+        }
+
+        function useInputAsOutput(inputId, outputId) {
+            document.getElementById(outputId).value = document.getElementById(inputId).value;
         }
     </script>
 </body>
