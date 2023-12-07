@@ -50,10 +50,10 @@
     <input type="file" id="csvFileInput" accept=".csv"><br>
     <label for="primaryKey">Primary Key Column:</label>
     <input type="text" id="primaryKey" onchange="updateOutputHeaders()">
-    <input type="checkbox" id="usePrimaryKey" onchange="useInputAsOutput('primaryKey', 'outputPrimaryKey')"> Use as output column header<br>
+    <input type="checkbox" id="usePrimaryKey" onchange="useInputAsOutput('primaryKey', 'outputPrimaryKey')"> Use as output column name<br>
     <label for="multiValue">Multi-Value Column:</label>
     <input type="text" id="multiValue" onchange="updateOutputHeaders()">
-    <input type="checkbox" id="useMultiValue" onchange="useInputAsOutput('multiValue', 'outputMultiValue')"> Use as output column header<br>
+    <input type="checkbox" id="useMultiValue" onchange="useInputAsOutput('multiValue', 'outputMultiValue')"> Use as output column name<br>
     <label for="delimiter">Delimiter:</label>
     <input type="text" id="delimiter" placeholder="e.g., ;"><br>
     <label for="outputPrimaryKey">Output Primary Key Column Name:</label>
