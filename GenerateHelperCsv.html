@@ -14,11 +14,14 @@
         h2 {
             color: #007bff;
         }
-        p, label, button, input[type='checkbox'] {
+        p, label, button, input {
             font-size: 16px;
         }
-        input[type='file'], input[type='text'], button {
-            margin: 10px 0;
+        label, input, button {
+            display: block; /* Makes each element take the full width of its container */
+            margin-bottom: 10px; /* Adds space below each element */
+        }
+        input[type='text'], button {
             padding: 10px;
             border: 2px solid #007bff;
             border-radius: 4px;
@@ -32,6 +35,10 @@
         }
         button:hover {
             background-color: #218838;
+        }
+        .checkbox-label {
+            display: inline-block; /* Align checkboxes with their labels */
+            margin-right: 10px; /* Space between checkbox and label */
         }
     </style>
 </head>
@@ -47,19 +54,19 @@
         <li>Click the "Process CSV" button to generate the helper CSV file.</li>
     </ol>
 
-    <input type="file" id="csvFileInput" accept=".csv"><br>
+    <input type="file" id="csvFileInput" accept=".csv">
     <label for="primaryKey">Primary Key Column:</label>
     <input type="text" id="primaryKey" onchange="updateOutputHeaders()">
-    <input type="checkbox" id="usePrimaryKey" onchange="useInputAsOutput('primaryKey', 'outputPrimaryKey')"> Use as output column name<br>
+    <label class="checkbox-label"><input type="checkbox" id="usePrimaryKey" onchange="useInputAsOutput('primaryKey', 'outputPrimaryKey')"> Use as output column header</label>
     <label for="multiValue">Multi-Value Column:</label>
     <input type="text" id="multiValue" onchange="updateOutputHeaders()">
-    <input type="checkbox" id="useMultiValue" onchange="useInputAsOutput('multiValue', 'outputMultiValue')"> Use as output column name<br>
+    <label class="checkbox-label"><input type="checkbox" id="useMultiValue" onchange="useInputAsOutput('multiValue', 'outputMultiValue')"> Use as output column header</label>
     <label for="delimiter">Delimiter:</label>
-    <input type="text" id="delimiter" placeholder="e.g., ;"><br>
+    <input type="text" id="delimiter" placeholder="e.g., ;">
     <label for="outputPrimaryKey">Output Primary Key Column Name:</label>
-    <input type="text" id="outputPrimaryKey" value="id"><br>
+    <input type="text" id="outputPrimaryKey" value="id">
     <label for="outputMultiValue">Output Multi-Value Column Name:</label>
-    <input type="text" id="outputMultiValue" value="value"><br>
+    <input type="text" id="outputMultiValue" value="value">
     <button onclick="processCSV()">Process CSV</button>
 
     <script>
@@ -85,7 +92,7 @@
                 const text = e.target.result;
                 const data = d3.csvParse(text);
 
-                if (!data.columns.includes(primaryKey) || !data.columns.includes(multiValue)) {
+                if (!data.columns.includes(primaryKey) or !data.columns.includes(multiValue)) {
                     alert("Error: One or more specified columns were not found.");
                     return;
                 }
