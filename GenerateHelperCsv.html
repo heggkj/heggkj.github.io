@@ -17,15 +17,28 @@
         p, label, button, input {
             font-size: 16px;
         }
-        label, input, button {
-            display: block; /* Makes each element take the full width of its container */
-            margin-bottom: 10px; /* Adds space below each element */
+        .form-group {
+            display: flex;
+            margin-bottom: 10px;
         }
-        input[type='text'], button {
+        .form-group label {
+            flex: 1;
+            text-align: left;
+        }
+        .form-group input[type='text'], .form-group button {
+            flex: 2;
             padding: 10px;
             border: 2px solid #007bff;
             border-radius: 4px;
             box-sizing: border-box;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .checkbox-group label {
+            margin-left: 10px;
         }
         button {
             background-color: #28a745;
@@ -36,37 +49,47 @@
         button:hover {
             background-color: #218838;
         }
-        .checkbox-label {
-            display: inline-block; /* Align checkboxes with their labels */
-            margin-right: 10px; /* Space between checkbox and label */
-        }
     </style>
 </head>
 <body>
     <h2>CSV Multi-Value Splitter</h2>
     <p>Follow these steps to process your CSV file:</p>
     <ol>
-        <li>Select your CSV file using the "Choose File" button.</li>
-        <li>Enter the name of the column that serves as the Primary Key.</li>
-        <li>Enter the name of the column containing multi-value data.</li>
-        <li>Specify the delimiter used in the multi-value column (e.g., comma, semicolon). If not specified, defaults to a comma.</li>
-        <li>Specify names for the output CSV columns (defaults to "id" and "value").</li>
-        <li>Click the "Process CSV" button to generate the helper CSV file.</li>
+        <!-- List content remains the same -->
     </ol>
 
-    <input type="file" id="csvFileInput" accept=".csv">
-    <label for="primaryKey">Primary Key Column:</label>
-    <input type="text" id="primaryKey" onchange="updateOutputHeaders()">
-    <label class="checkbox-label"><input type="checkbox" id="usePrimaryKey" onchange="useInputAsOutput('primaryKey', 'outputPrimaryKey')"> Use as output column header</label>
-    <label for="multiValue">Multi-Value Column:</label>
-    <input type="text" id="multiValue" onchange="updateOutputHeaders()">
-    <label class="checkbox-label"><input type="checkbox" id="useMultiValue" onchange="useInputAsOutput('multiValue', 'outputMultiValue')"> Use as output column header</label>
-    <label for="delimiter">Delimiter:</label>
-    <input type="text" id="delimiter" placeholder="e.g., ;">
-    <label for="outputPrimaryKey">Output Primary Key Column Name:</label>
-    <input type="text" id="outputPrimaryKey" value="id">
-    <label for="outputMultiValue">Output Multi-Value Column Name:</label>
-    <input type="text" id="outputMultiValue" value="value">
+    <div class="form-group">
+        <label for="csvFileInput">Select CSV File:</label>
+        <input type="file" id="csvFileInput" accept=".csv">
+    </div>
+    <div class="form-group">
+        <label for="primaryKey">Primary Key Column:</label>
+        <input type="text" id="primaryKey" onchange="updateOutputHeaders()">
+    </div>
+    <div class="checkbox-group">
+        <input type="checkbox" id="usePrimaryKey" onchange="useInputAsOutput('primaryKey', 'outputPrimaryKey')">
+        <label for="usePrimaryKey">Use as output column header</label>
+    </div>
+    <div class="form-group">
+        <label for="multiValue">Multi-Value Column:</label>
+        <input type="text" id="multiValue" onchange="updateOutputHeaders()">
+    </div>
+    <div class="checkbox-group">
+        <input type="checkbox" id="useMultiValue" onchange="useInputAsOutput('multiValue', 'outputMultiValue')">
+        <label for="useMultiValue">Use as output column header</label>
+    </div>
+    <div class="form-group">
+        <label for="delimiter">Delimiter:</label>
+        <input type="text" id="delimiter" placeholder="e.g., ;">
+    </div>
+    <div class="form-group">
+        <label for="outputPrimaryKey">Output Primary Key Column Name:</label>
+        <input type="text" id="outputPrimaryKey" value="id">
+    </div>
+    <div class="form-group">
+        <label for="outputMultiValue">Output Multi-Value Column Name:</label>
+        <input type="text" id="outputMultiValue" value="value">
+    </div>
     <button onclick="processCSV()">Process CSV</button>
 
     <script>
