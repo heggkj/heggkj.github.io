@@ -1,0 +1,87 @@
+﻿Activity ID,source,target,Verb Lemma
+CLDR_09_10,Jose Manuel Barroso,Nicolas Sarkozy,receives
+CLDR_09_10,Joaquin Almunia,Mario Monti,meets
+CLDR_09_20,Jose Manuel Barroso,Jean-Claude Juncker,meets
+CLDR_09_20,Margot Wallstrom,Jan Figel,receives
+CLDR_09_30,Jacques Barrot,Louis Michel,meets
+CLDR_09_30,Olli Rehn,Jan Figel,receives
+CLDR_09_40,Joaquin Almunia,Danuta Hubner,meets
+CLDR_09_40,Stavros Dimas,Louis Michel,receives
+CLDR_09_50,Jose Manuel Barroso,Joaquin Almunia,meets
+CLDR_09_50,Franco Frattini,Jacques Barrot,receives
+CLDR_09_60,Siim Kallas,Joe Borg,meets
+CLDR_09_60,Margot Wallstrom,Peter Mandelson,receives
+CLDR_09_70,Louis Michel,Markos Kyprianou,meets
+CLDR_09_70,Joaquin Almunia,Mario Monti,receives
+CLDR_09_80,Charlie McCreevy,Viviane Reding,meets
+CLDR_09_80,Stavros Dimas,Joe Borg,receives
+CLDR_09_90,Jose Manuel Barroso,Siim Kallas,meets
+CLDR_09_90,Margot Wallstrom,Olli Rehn,receives
+CLDR_09_100,Joaquin Almunia,Peter Mandelson,meets
+CLDR_09_100,Markos Kyprianou,Joe Borg,receives
+CLDR_09_110,Louis Michel,Stavros Dimas,meets
+CLDR_09_110,Margot Wallstrom,Olli Rehn,receives
+CLDR_09_120,Joaquin Almunia,Peter Mandelson,meets
+CLDR_09_120,Charlie McCreevy,Viviane Reding,receives
+CLDR_09_130,Jose Manuel Barroso,Joaquin Almunia,meets
+CLDR_09_130,Margot Wallstrom,Mario Monti,receives
+CLDR_09_140,Louis Michel,Peter Mandelson,meets
+CLDR_09_140,Charlie McCreevy,Olli Rehn,receives
+CLDR_09_150,Jose Manuel Barroso,Jacques Barrot,meets
+CLDR_09_150,Markos Kyprianou,Joe Borg,receives
+CLDR_09_160,Siim Kallas,Joaquin Almunia,meets
+CLDR_09_160,Viviane Reding,Peter Mandelson,receives
+CLDR_09_170,Joaquin Almunia,Louis Michel,meets
+CLDR_09_170,Margot Wallstrom,Siim Kallas,receives
+CLDR_09_180,Jose Manuel Barroso,Markos Kyprianou,meets
+CLDR_09_180,Charlie McCreevy,Olli Rehn,receives
+CLDR_09_190,Louis Michel,Joe Borg,meets
+CLDR_09_190,Peter Mandelson,Viviane Reding,receives
+CLDR_09_200,Joaquin Almunia,Jacques Barrot,meets
+CLDR_09_200,Siim Kallas,Olli Rehn,receives
+CLDR_09_210,Markos Kyprianou,Mario Monti,meets
+CLDR_09_210,Jose Manuel Barroso,Louis Michel,receives
+CLDR_09_220,Jacques Barrot,Peter Mandelson,meets
+CLDR_09_220,Margot Wallstrom,Joaquin Almunia,receives
+CLDR_09_230,Siim Kallas,Peter Mandelson,meets
+CLDR_09_230,Margot Wallstrom,Joe Borg,receives
+CLDR_09_240,Joaquin Almunia,Charlie McCreevy,meets
+CLDR_09_240,Jacques Barrot,Markos Kyprianou,receives
+CLDR_09_250,Jose Manuel Barroso,Mario Monti,meets
+CLDR_09_250,Peter Mandelson,Viviane Reding,receives
+CLDR_09_260,Siim Kallas,Joaquin Almunia,meets
+CLDR_09_260,Margot Wallstrom,Joe Borg,receives
+CLDR_09_270,Louis Michel,Jacques Barrot,meets
+CLDR_09_270,Joaquin Almunia,Mario Monti,receives
+CLDR_09_280,Charlie McCreevy,Peter Mandelson,meets
+CLDR_09_280,Jose Manuel Barroso,Joe Borg,receives
+CLDR_09_290,Markos Kyprianou,Viviane Reding,meets
+CLDR_09_290,Jacques Barrot,Joaquin Almunia,receives
+CLDR_09_300,Siim Kallas,Mario Monti,meets
+CLDR_09_300,Louis Michel,Joe Borg,receives
+CLDR_09_310,Joaquin Almunia,Peter Mandelson,meets
+CLDR_09_310,Margot Wallstrom,Olli Rehn,receives
+CLDR_09_320,Jose Manuel Barroso,Jacques Barrot,meets
+CLDR_09_320,Charlie McCreevy,Joe Borg,receives
+CLDR_09_330,Louis Michel,Markos Kyprianou,meets
+CLDR_09_330,Joaquin Almunia,Mario Monti,receives
+CLDR_09_340,Jacques Barrot,Viviane Reding,meets
+CLDR_09_340,Siim Kallas,Peter Mandelson,receives
+CLDR_09_350,Jose Manuel Barroso,Olli Rehn,meets
+CLDR_09_350,Margot Wallstrom,Louis Michel,receives
+CLDR_09_360,Charlie McCreevy,Joaquin Almunia,meets
+CLDR_09_360,Viviane Reding,Peter Mandelson,receives
+CLDR_09_370,Jacques Barrot,Mario Monti,meets
+CLDR_09_370,Siim Kallas,Joe Borg,receives
+CLDR_09_380,Louis Michel,Markos Kyprianou,meets
+CLDR_09_380,Joaquin Almunia,Mario Monti,receives
+CLDR_09_390,Jose Manuel Barroso,Jacques Barrot,meets
+CLDR_09_390,Margot Wallstrom,Louis Michel,receives
+CLDR_09_400,Charlie McCreevy,Joaquin Almunia,meets
+CLDR_09_400,Viviane Reding,Peter Mandelson,receives
+CLDR_09_410,Jacques Barrot,Mario Monti,meets
+CLDR_09_410,Siim Kallas,Joe Borg,receives
+CLDR_09_420,Louis Michel,Markos Kyprianou,meets
+CLDR_09_420,Joaquin Almunia,Mario Monti,receives
+CLDR_09_430,Jose Manuel Barroso,Olli Rehn,meets
+CLDR_09_430,Margot Wallstrom,Peter Mandel,receives
