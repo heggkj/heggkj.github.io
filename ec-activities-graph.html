@@ -57,7 +57,7 @@
 
     svg.call(d3.zoom().scaleExtent([1/2, 8]).on("zoom", zoomed));
 
-    d3.csv("dec-activities.csv").then(function(links) {
+    d3.csv("ec-activities.csv").then(function(links) {
         var nodes = {};
         var tlds = {};
 
