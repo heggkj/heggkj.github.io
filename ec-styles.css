@@ -1,0 +1,29 @@
+.link {
+    stroke-opacity: 0.6;
+    stroke-width: 2;
+}
+
+.node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.label {
+    font: 10px sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.faded {
+    opacity: 0.1;
+}
+
+.highlighted {
+    opacity: 1;
+}

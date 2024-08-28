@@ -1,0 +1,2099 @@
+﻿Activity ID,Subject,Object,Verb Lemma
+CLDR_09_10,Jose Manuel Barroso,Nicolas Sarkozy,receives
+CLDR_09_10,Joaquin Almunia,Mario Monti,meets
+CLDR_09_20,Jose Manuel Barroso,Jean-Claude Juncker,meets
+CLDR_09_20,Margot Wallstrom,Jan Figel,receives
+CLDR_09_30,Jacques Barrot,Louis Michel,meets
+CLDR_09_30,Olli Rehn,Jan Figel,receives
+CLDR_09_40,Joaquin Almunia,Danuta Hubner,meets
+CLDR_09_40,Stavros Dimas,Louis Michel,receives
+CLDR_09_50,Jose Manuel Barroso,Joaquin Almunia,meets
+CLDR_09_50,Franco Frattini,Jacques Barrot,receives
+CLDR_09_60,Siim Kallas,Joe Borg,meets
+CLDR_09_60,Margot Wallstrom,Peter Mandelson,receives
+CLDR_09_70,Louis Michel,Markos Kyprianou,meets
+CLDR_09_70,Joaquin Almunia,Mario Monti,receives
+CLDR_09_80,Charlie McCreevy,Viviane Reding,meets
+CLDR_09_80,Stavros Dimas,Joe Borg,receives
+CLDR_09_90,Jose Manuel Barroso,Siim Kallas,meets
+CLDR_09_90,Margot Wallstrom,Olli Rehn,receives
+CLDR_09_100,Joaquin Almunia,Peter Mandelson,meets
+CLDR_09_100,Markos Kyprianou,Joe Borg,receives
+CLDR_09_110,Louis Michel,Stavros Dimas,meets
+CLDR_09_110,Margot Wallstrom,Olli Rehn,receives
+CLDR_09_120,Joaquin Almunia,Peter Mandelson,meets
+CLDR_09_120,Charlie McCreevy,Viviane Reding,receives
+CLDR_09_130,Jose Manuel Barroso,Joaquin Almunia,meets
+CLDR_09_130,Margot Wallstrom,Mario Monti,receives
+CLDR_09_140,Louis Michel,Peter Mandelson,meets
+CLDR_09_140,Charlie McCreevy,Olli Rehn,receives
+CLDR_09_150,Jose Manuel Barroso,Jacques Barrot,meets
+CLDR_09_150,Markos Kyprianou,Joe Borg,receives
+CLDR_09_160,Siim Kallas,Joaquin Almunia,meets
+CLDR_09_160,Viviane Reding,Peter Mandelson,receives
+CLDR_09_170,Joaquin Almunia,Louis Michel,meets
+CLDR_09_170,Margot Wallstrom,Siim Kallas,receives
+CLDR_09_180,Jose Manuel Barroso,Markos Kyprianou,meets
+CLDR_09_180,Charlie McCreevy,Olli Rehn,receives
+CLDR_09_190,Louis Michel,Joe Borg,meets
+CLDR_09_190,Peter Mandelson,Viviane Reding,receives
+CLDR_09_200,Joaquin Almunia,Jacques Barrot,meets
+CLDR_09_200,Siim Kallas,Olli Rehn,receives
+CLDR_09_210,Markos Kyprianou,Mario Monti,meets
+CLDR_09_210,Jose Manuel Barroso,Louis Michel,receives
+CLDR_09_220,Jacques Barrot,Peter Mandelson,meets
+CLDR_09_220,Margot Wallstrom,Joaquin Almunia,receives
+CLDR_09_230,Siim Kallas,Peter Mandelson,meets
+CLDR_09_230,Margot Wallstrom,Joe Borg,receives
+CLDR_09_240,Joaquin Almunia,Charlie McCreevy,meets
+CLDR_09_240,Jacques Barrot,Markos Kyprianou,receives
+CLDR_09_250,Jose Manuel Barroso,Mario Monti,meets
+CLDR_09_250,Peter Mandelson,Viviane Reding,receives
+CLDR_09_260,Siim Kallas,Joaquin Almunia,meets
+CLDR_09_260,Margot Wallstrom,Joe Borg,receives
+CLDR_09_270,Louis Michel,Jacques Barrot,meets
+CLDR_09_270,Joaquin Almunia,Mario Monti,receives
+CLDR_09_280,Charlie McCreevy,Peter Mandelson,meets
+CLDR_09_280,Jose Manuel Barroso,Joe Borg,receives
+CLDR_09_290,Markos Kyprianou,Viviane Reding,meets
+CLDR_09_290,Jacques Barrot,Joaquin Almunia,receives
+CLDR_09_300,Siim Kallas,Mario Monti,meets
+CLDR_09_300,Louis Michel,Joe Borg,receives
+CLDR_09_310,Joaquin Almunia,Peter Mandelson,meets
+CLDR_09_310,Margot Wallstrom,Olli Rehn,receives
+CLDR_09_320,Jose Manuel Barroso,Jacques Barrot,meets
+CLDR_09_320,Charlie McCreevy,Joe Borg,receives
+CLDR_09_330,Louis Michel,Markos Kyprianou,meets
+CLDR_09_330,Joaquin Almunia,Mario Monti,receives
+CLDR_09_340,Jacques Barrot,Viviane Reding,meets
+CLDR_09_340,Siim Kallas,Peter Mandelson,receives
+CLDR_09_350,Jose Manuel Barroso,Olli Rehn,meets
+CLDR_09_350,Margot Wallstrom,Louis Michel,receives
+CLDR_09_360,Charlie McCreevy,Joaquin Almunia,meets
+CLDR_09_360,Viviane Reding,Peter Mandelson,receives
+CLDR_09_370,Jacques Barrot,Mario Monti,meets
+CLDR_09_370,Siim Kallas,Joe Borg,receives
+CLDR_09_380,Louis Michel,Markos Kyprianou,meets
+CLDR_09_380,Joaquin Almunia,Mario Monti,receives
+CLDR_09_390,Jose Manuel Barroso,Jacques Barrot,meets
+CLDR_09_390,Margot Wallstrom,Louis Michel,receives
+CLDR_09_400,Charlie McCreevy,Joaquin Almunia,meets
+CLDR_09_400,Viviane Reding,Peter Mandelson,receives
+CLDR_09_410,Jacques Barrot,Mario Monti,meets
+CLDR_09_410,Siim Kallas,Joe Borg,receives
+CLDR_09_420,Louis Michel,Markos Kyprianou,meets
+CLDR_09_420,Joaquin Almunia,Mario Monti,receives
+CLDR_09_430,Jose Manuel Barroso,Olli Rehn,meets
+CLDR_09_430,Margot Wallstrom,Peter Mandel,receives
+CALDR_10_01,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_01,Catherine Ashton,Anders Fogh Rasmussen,receives
+CALDR_10_02,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_02,Viviane Reding,Michel Barnier,receives
+CALDR_10_03,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_03,Catherine Ashton,David Miliband,receives
+CALDR_10_04,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_04,Joaquin Almunia,Olli Rehn,receives
+CALDR_10_05,Michel Barnier,Karel De Gucht,meets
+CALDR_10_05,Catherine Ashton,George Papandreou,receives
+CALDR_10_06,Jose Manuel Barroso,Donald Tusk,meets
+CALDR_10_06,Viviane Reding,Michel Barnier,receives
+CALDR_10_07,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_07,Joaquin Almunia,Olli Rehn,receives
+CALDR_10_08,Karel De Gucht,Michel Barnier,meets
+CALDR_10_08,Catherine Ashton,David Miliband,receives
+CALDR_10_09,Jose Manuel Barroso,Donald Tusk,meets
+CALDR_10_09,Viviane Reding,Herman Van Rompuy,receives
+CALDR_10_10,Jose Manuel Barroso,George Papandreou,meets
+CALDR_10_10,Catherine Ashton,David Miliband,receives
+CALDR_10_11,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_11,Karel De Gucht,David Miliband,receives
+CALDR_10_12,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_12,Catherine Ashton,Donald Tusk,receives
+CALDR_10_13,Viviane Reding,Michel Barnier,meets
+CALDR_10_13,Jose Manuel Barroso,George Papandreou,receives
+CALDR_10_14,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_14,Karel De Gucht,David Miliband,receives
+CALDR_10_15,Jose Manuel Barroso,Donald Tusk,meets
+CALDR_10_15,Viviane Reding,Michel Barnier,receives
+CALDR_10_16,Catherine Ashton,George Papandreou,meets
+CALDR_10_16,Jose Manuel Barroso,Herman Van Rompuy,receives
+CALDR_10_17,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_17,Karel De Gucht,David Miliband,receives
+CALDR_10_18,Jose Manuel Barroso,George Papandreou,meets
+CALDR_10_18,Viviane Reding,Herman Van Rompuy,receives
+CALDR_10_19,Catherine Ashton,Donald Tusk,meets
+CALDR_10_19,Jose Manuel Barroso,Michel Barnier,receives
+CALDR_10_20,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_20,Karel De Gucht,David Miliband,receives
+CALDR_10_21,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_21,Catherine Ashton,Donald Tusk,receives
+CALDR_10_22,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_22,Viviane Reding,George Papandreou,receives
+CALDR_10_23,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_23,Catherine Ashton,David Miliband,receives
+CALDR_10_24,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_24,Viviane Reding,Michel Barnier,receives
+CALDR_10_25,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_25,Catherine Ashton,Donald Tusk,receives
+CALDR_10_26,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_26,Viviane Reding,George Papandreou,receives
+CALDR_10_27,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_27,Catherine Ashton,David Miliband,receives
+CALDR_10_28,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_28,Viviane Reding,Michel Barnier,receives
+CALDR_10_29,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_29,Catherine Ashton,Donald Tusk,receives
+CALDR_10_30,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_30,Viviane Reding,George Papandreou,receives
+CALDR_10_31,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_31,Catherine Ashton,Donald Tusk,receives
+CALDR_10_32,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_32,Viviane Reding,George Papandreou,receives
+CALDR_10_33,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_33,Catherine Ashton,David Miliband,receives
+CALDR_10_34,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_34,Viviane Reding,Michel Barnier,receives
+CALDR_10_35,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_35,Catherine Ashton,Donald Tusk,receives
+CALDR_10_36,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_36,Viviane Reding,George Papandreou,receives
+CALDR_10_37,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_37,Catherine Ashton,David Miliband,receives
+CALDR_10_38,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_38,Viviane Reding,Michel Barnier,receives
+CALDR_10_39,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_39,Catherine Ashton,Donald Tusk,receives
+CALDR_10_40,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_40,Viviane Reding,George Papandreou,receives
+CALDR_10_41,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_41,Catherine Ashton,Donald Tusk,receives
+CALDR_10_42,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_42,Viviane Reding,George Papandreou,receives
+CALDR_10_43,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_43,Catherine Ashton,David Miliband,receives
+CALDR_10_44,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_44,Viviane Reding,Michel Barnier,receives
+CALDR_10_45,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_45,Catherine Ashton,Donald Tusk,receives
+CALDR_10_46,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_46,Viviane Reding,George Papandreou,receives
+CALDR_10_47,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_47,Catherine Ashton,David Miliband,receives
+CALDR_10_48,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_48,Viviane Reding,Michel Barnier,receives
+CALDR_10_49,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_49,Catherine Ashton,Donald Tusk,receives
+CALDR_10_50,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_50,Viviane Reding,George Papandreou,receives
+CALDR_10_51,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_51,Catherine Ashton,Donald Tusk,receives
+CALDR_10_52,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_52,Viviane Reding,George Papandreou,receives
+CALDR_10_53,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_53,Catherine Ashton,David Miliband,receives
+CALDR_10_54,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_54,Viviane Reding,Michel Barnier,receives
+CALDR_10_55,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_55,Catherine Ashton,Donald Tusk,receives
+CALDR_10_56,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_56,Viviane Reding,George Papandreou,receives
+CALDR_10_57,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_57,Catherine Ashton,David Miliband,receives
+CALDR_10_58,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_58,Viviane Reding,Michel Barnier,receives
+CALDR_10_59,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_59,Catherine Ashton,Donald Tusk,receives
+CALDR_10_60,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_60,Viviane Reding,George Papandreou,receives
+CALDR_10_61,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_61,Catherine Ashton,David Miliband,receives
+CALDR_10_62,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_62,Viviane Reding,Michel Barnier,receives
+CALDR_10_63,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_63,Catherine Ashton,Donald Tusk,receives
+CALDR_10_64,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_64,Viviane Reding,George Papandreou,receives
+CALDR_10_65,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_65,Catherine Ashton,David Miliband,receives
+CALDR_10_66,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_66,Viviane Reding,Michel Barnier,receives
+CALDR_10_67,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_10_67,Catherine Ashton,Donald Tusk,receives
+CALDR_10_68,Joaquin Almunia,Michel Barnier,meets
+CALDR_10_68,Viviane Reding,George Papandreou,receives
+CALDR_10_69,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_10_69,Catherine Ashton,David Miliband,receives
+CALDR_10_70,Joaquin Almunia,Olli Rehn,meets
+CALDR_10_70,Viviane Reding,Michel Barnier,receives
+CALDR_11_01,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_01,Catherine Ashton,Donald Tusk,receives
+CALDR_11_02,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_02,Viviane Reding,George Papandreou,receives
+CALDR_11_03,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_03,Catherine Ashton,David Miliband,receives
+CALDR_11_04,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_04,Viviane Reding,Michel Barnier,receives
+CALDR_11_05,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_05,Catherine Ashton,Donald Tusk,receives
+CALDR_11_06,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_06,Viviane Reding,George Papandreou,receives
+CALDR_11_07,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_07,Catherine Ashton,David Miliband,receives
+CALDR_11_08,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_08,Viviane Reding,Michel Barnier,receives
+CALDR_11_09,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_09,Catherine Ashton,Donald Tusk,receives
+CALDR_11_10,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_10,Viviane Reding,George Papandreou,receives
+CALDR_11_11,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_11,Catherine Ashton,David Miliband,receives
+CALDR_11_12,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_12,Viviane Reding,Michel Barnier,receives
+CALDR_11_13,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_13,Catherine Ashton,Donald Tusk,receives
+CALDR_11_14,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_14,Viviane Reding,George Papandreou,receives
+CALDR_11_15,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_15,Catherine Ashton,David Miliband,receives
+CALDR_11_16,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_16,Viviane Reding,Michel Barnier,receives
+CALDR_11_17,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_17,Catherine Ashton,Donald Tusk,receives
+CALDR_11_18,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_18,Viviane Reding,George Papandreou,receives
+CALDR_11_19,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_19,Catherine Ashton,David Miliband,receives
+CALDR_11_20,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_20,Viviane Reding,Michel Barnier,receives
+CALDR_11_21,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_21,Catherine Ashton,Donald Tusk,receives
+CALDR_11_22,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_22,Viviane Reding,George Papandreou,receives
+CALDR_11_23,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_23,Catherine Ashton,David Miliband,receives
+CALDR_11_24,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_24,Viviane Reding,Michel Barnier,receives
+CALDR_11_25,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_25,Catherine Ashton,Donald Tusk,receives
+CALDR_11_26,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_26,Viviane Reding,George Papandreou,receives
+CALDR_11_27,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_27,Catherine Ashton,David Miliband,receives
+CALDR_11_28,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_28,Viviane Reding,Michel Barnier,receives
+CALDR_11_29,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_29,Catherine Ashton,Donald Tusk,receives
+CALDR_11_30,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_30,Viviane Reding,George Papandreou,receives
+CALDR_11_31,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_31,Catherine Ashton,David Miliband,receives
+CALDR_11_32,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_32,Viviane Reding,Michel Barnier,receives
+CALDR_11_33,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_33,Catherine Ashton,Donald Tusk,receives
+CALDR_11_34,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_34,Viviane Reding,George Papandreou,receives
+CALDR_11_35,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_35,Catherine Ashton,David Miliband,receives
+CALDR_11_36,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_36,Viviane Reding,Michel Barnier,receives
+CALDR_11_37,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_37,Catherine Ashton,Donald Tusk,receives
+CALDR_11_38,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_38,Viviane Reding,George Papandreou,receives
+CALDR_11_39,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_39,Catherine Ashton,David Miliband,receives
+CALDR_11_40,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_40,Viviane Reding,Michel Barnier,receives
+CALDR_11_41,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_41,Catherine Ashton,Donald Tusk,receives
+CALDR_11_42,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_42,Viviane Reding,George Papandreou,receives
+CALDR_11_43,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_43,Catherine Ashton,David Miliband,receives
+CALDR_11_44,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_44,Viviane Reding,Michel Barnier,receives
+CALDR_11_45,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_45,Catherine Ashton,Donald Tusk,receives
+CALDR_11_46,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_46,Viviane Reding,George Papandreou,receives
+CALDR_11_47,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_11_47,Catherine Ashton,David Miliband,receives
+CALDR_11_48,Joaquin Almunia,Olli Rehn,meets
+CALDR_11_48,Viviane Reding,Michel Barnier,receives
+CALDR_11_49,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_11_49,Catherine Ashton,Donald Tusk,receives
+CALDR_11_50,Joaquin Almunia,Michel Barnier,meets
+CALDR_11_50,Viviane Reding,George Papandreou,receives
+CALDR_12_01,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_01,Catherine Ashton,Donald Tusk,receives
+CALDR_12_02,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_02,Viviane Reding,George Papandreou,receives
+CALDR_12_03,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_03,Catherine Ashton,David Miliband,receives
+CALDR_12_04,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_04,Viviane Reding,Michel Barnier,receives
+CALDR_12_05,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_05,Catherine Ashton,Donald Tusk,receives
+CALDR_12_06,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_06,Viviane Reding,George Papandreou,receives
+CALDR_12_07,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_07,Catherine Ashton,David Miliband,receives
+CALDR_12_08,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_08,Viviane Reding,Michel Barnier,receives
+CALDR_12_09,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_09,Catherine Ashton,Donald Tusk,receives
+CALDR_12_10,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_10,Viviane Reding,George Papandreou,receives
+CALDR_12_11,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_11,Catherine Ashton,David Miliband,receives
+CALDR_12_12,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_12,Viviane Reding,Michel Barnier,receives
+CALDR_12_13,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_13,Catherine Ashton,Donald Tusk,receives
+CALDR_12_14,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_14,Viviane Reding,George Papandreou,receives
+CALDR_12_15,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_15,Catherine Ashton,David Miliband,receives
+CALDR_12_16,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_16,Viviane Reding,Michel Barnier,receives
+CALDR_12_17,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_17,Catherine Ashton,Donald Tusk,receives
+CALDR_12_18,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_18,Viviane Reding,George Papandreou,receives
+CALDR_12_19,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_19,Catherine Ashton,David Miliband,receives
+CALDR_12_20,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_20,Viviane Reding,Michel Barnier,receives
+CALDR_12_21,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_21,Catherine Ashton,Donald Tusk,receives
+CALDR_12_22,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_22,Viviane Reding,George Papandreou,receives
+CALDR_12_23,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_23,Catherine Ashton,David Miliband,receives
+CALDR_12_24,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_24,Viviane Reding,Michel Barnier,receives
+CALDR_12_25,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_25,Catherine Ashton,Donald Tusk,receives
+CALDR_12_26,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_26,Viviane Reding,George Papandreou,receives
+CALDR_12_27,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_27,Catherine Ashton,David Miliband,receives
+CALDR_12_28,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_28,Viviane Reding,Michel Barnier,receives
+CALDR_12_29,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_29,Catherine Ashton,Donald Tusk,receives
+CALDR_12_30,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_30,Viviane Reding,George Papandreou,receives
+CALDR_12_31,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_31,Catherine Ashton,David Miliband,receives
+CALDR_12_32,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_32,Viviane Reding,Michel Barnier,receives
+CALDR_12_33,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_33,Catherine Ashton,Donald Tusk,receives
+CALDR_12_34,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_34,Viviane Reding,George Papandreou,receives
+CALDR_12_35,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_35,Catherine Ashton,David Miliband,receives
+CALDR_12_36,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_36,Viviane Reding,Michel Barnier,receives
+CALDR_12_37,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_37,Catherine Ashton,Donald Tusk,receives
+CALDR_12_38,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_38,Viviane Reding,George Papandreou,receives
+CALDR_12_39,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_39,Catherine Ashton,David Miliband,receives
+CALDR_12_40,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_40,Viviane Reding,Michel Barnier,receives
+CALDR_12_41,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_41,Catherine Ashton,Donald Tusk,receives
+CALDR_12_42,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_42,Viviane Reding,George Papandreou,receives
+CALDR_12_43,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_43,Catherine Ashton,David Miliband,receives
+CALDR_12_44,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_44,Viviane Reding,Michel Barnier,receives
+CALDR_12_45,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_45,Catherine Ashton,Donald Tusk,receives
+CALDR_12_46,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_46,Viviane Reding,George Papandreou,receives
+CALDR_12_47,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_47,Catherine Ashton,David Miliband,receives
+CALDR_12_48,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_48,Viviane Reding,Michel Barnier,receives
+CALDR_12_49,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_12_49,Catherine Ashton,Donald Tusk,receives
+CALDR_12_50,Joaquin Almunia,Michel Barnier,meets
+CALDR_12_50,Viviane Reding,George Papandreou,receives
+CALDR_12_51,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_12_51,Catherine Ashton,David Miliband,receives
+CALDR_12_52,Joaquin Almunia,Olli Rehn,meets
+CALDR_12_52,Viviane Reding,Michel Barnier,receives
+CALDR_13_01,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_01,Catherine Ashton,Donald Tusk,receives
+CALDR_13_02,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_02,Viviane Reding,George Papandreou,receives
+CALDR_13_03,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_03,Catherine Ashton,David Miliband,receives
+CALDR_13_04,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_04,Viviane Reding,Michel Barnier,receives
+CALDR_13_05,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_05,Catherine Ashton,Donald Tusk,receives
+CALDR_13_06,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_06,Viviane Reding,George Papandreou,receives
+CALDR_13_07,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_07,Catherine Ashton,David Miliband,receives
+CALDR_13_08,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_08,Viviane Reding,Michel Barnier,receives
+CALDR_13_09,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_09,Catherine Ashton,Donald Tusk,receives
+CALDR_13_10,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_10,Viviane Reding,George Papandreou,receives
+CALDR_13_11,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_11,Catherine Ashton,David Miliband,receives
+CALDR_13_12,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_12,Viviane Reding,Michel Barnier,receives
+CALDR_13_13,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_13,Catherine Ashton,Donald Tusk,receives
+CALDR_13_14,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_14,Viviane Reding,George Papandreou,receives
+CALDR_13_15,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_15,Catherine Ashton,David Miliband,receives
+CALDR_13_16,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_16,Viviane Reding,Michel Barnier,receives
+CALDR_13_17,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_17,Catherine Ashton,Donald Tusk,receives
+CALDR_13_18,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_18,Viviane Reding,George Papandreou,receives
+CALDR_13_19,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_19,Catherine Ashton,David Miliband,receives
+CALDR_13_20,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_20,Viviane Reding,Michel Barnier,receives
+CALDR_13_21,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_21,Catherine Ashton,Donald Tusk,receives
+CALDR_13_22,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_22,Viviane Reding,George Papandreou,receives
+CALDR_13_23,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_23,Catherine Ashton,David Miliband,receives
+CALDR_13_24,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_24,Viviane Reding,Michel Barnier,receives
+CALDR_13_25,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_25,Catherine Ashton,Donald Tusk,receives
+CALDR_13_26,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_26,Viviane Reding,George Papandreou,receives
+CALDR_13_27,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_27,Catherine Ashton,David Miliband,receives
+CALDR_13_28,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_28,Viviane Reding,Michel Barnier,receives
+CALDR_13_29,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_29,Catherine Ashton,Donald Tusk,receives
+CALDR_13_30,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_30,Viviane Reding,George Papandreou,receives
+CALDR_13_31,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_31,Catherine Ashton,David Miliband,receives
+CALDR_13_32,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_32,Viviane Reding,Michel Barnier,receives
+CALDR_13_33,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_33,Catherine Ashton,Donald Tusk,receives
+CALDR_13_34,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_34,Viviane Reding,George Papandreou,receives
+CALDR_13_35,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_35,Catherine Ashton,David Miliband,receives
+CALDR_13_36,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_36,Viviane Reding,Michel Barnier,receives
+CALDR_13_37,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_37,Catherine Ashton,Donald Tusk,receives
+CALDR_13_38,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_38,Viviane Reding,George Papandreou,receives
+CALDR_13_39,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_39,Catherine Ashton,David Miliband,receives
+CALDR_13_40,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_40,Viviane Reding,Michel Barnier,receives
+CALDR_13_41,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_41,Catherine Ashton,Donald Tusk,receives
+CALDR_13_42,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_42,Viviane Reding,George Papandreou,receives
+CALDR_13_43,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_43,Catherine Ashton,David Miliband,receives
+CALDR_13_44,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_44,Viviane Reding,Michel Barnier,receives
+CALDR_13_45,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_45,Catherine Ashton,Donald Tusk,receives
+CALDR_13_46,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_46,Viviane Reding,George Papandreou,receives
+CALDR_13_47,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_47,Catherine Ashton,David Miliband,receives
+CALDR_13_48,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_48,Viviane Reding,Michel Barnier,receives
+CALDR_13_49,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_13_49,Catherine Ashton,Donald Tusk,receives
+CALDR_13_50,Joaquin Almunia,Michel Barnier,meets
+CALDR_13_50,Viviane Reding,George Papandreou,receives
+CALDR_13_51,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_13_51,Catherine Ashton,David Miliband,receives
+CALDR_13_52,Joaquin Almunia,Olli Rehn,meets
+CALDR_13_52,Viviane Reding,Michel Barnier,receives
+CALDR_14_01,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_01,Catherine Ashton,Donald Tusk,receives
+CALDR_14_02,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_02,Viviane Reding,George Papandreou,receives
+CALDR_14_03,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_14_03,Catherine Ashton,David Miliband,receives
+CALDR_14_04,Joaquin Almunia,Olli Rehn,meets
+CALDR_14_04,Viviane Reding,Michel Barnier,receives
+CALDR_14_05,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_05,Catherine Ashton,Donald Tusk,receives
+CALDR_14_06,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_06,Viviane Reding,George Papandreou,receives
+CALDR_14_07,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_14_07,Catherine Ashton,David Miliband,receives
+CALDR_14_08,Joaquin Almunia,Olli Rehn,meets
+CALDR_14_08,Viviane Reding,Michel Barnier,receives
+CALDR_14_09,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_09,Catherine Ashton,Donald Tusk,receives
+CALDR_14_10,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_10,Viviane Reding,George Papandreou,receives
+CALDR_14_11,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_14_11,Catherine Ashton,David Miliband,receives
+CALDR_14_12,Joaquin Almunia,Olli Rehn,meets
+CALDR_14_12,Viviane Reding,Michel Barnier,receives
+CALDR_14_13,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_13,Catherine Ashton,Donald Tusk,receives
+CALDR_14_14,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_14,Viviane Reding,George Papandreou,receives
+CALDR_14_15,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_14_15,Catherine Ashton,David Miliband,receives
+CALDR_14_16,Joaquin Almunia,Olli Rehn,meets
+CALDR_14_16,Viviane Reding,Michel Barnier,receives
+CALDR_14_17,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_17,Catherine Ashton,Donald Tusk,receives
+CALDR_14_18,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_18,Viviane Reding,George Papandreou,receives
+CALDR_14_19,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_14_19,Catherine Ashton,David Miliband,receives
+CALDR_14_20,Joaquin Almunia,Olli Rehn,meets
+CALDR_14_20,Viviane Reding,Michel Barnier,receives
+CALDR_14_21,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_21,Catherine Ashton,Donald Tusk,receives
+CALDR_14_22,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_22,Viviane Reding,George Papandreou,receives
+CALDR_14_23,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_14_23,Catherine Ashton,David Miliband,receives
+CALDR_14_24,Joaquin Almunia,Olli Rehn,meets
+CALDR_14_24,Viviane Reding,Michel Barnier,receives
+CALDR_14_25,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_25,Catherine Ashton,Donald Tusk,receives
+CALDR_14_26,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_26,Viviane Reding,George Papandreou,receives
+CALDR_14_27,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_14_27,Catherine Ashton,David Miliband,receives
+CALDR_14_28,Joaquin Almunia,Olli Rehn,meets
+CALDR_14_28,Viviane Reding,Michel Barnier,receives
+CALDR_14_29,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_29,Catherine Ashton,Donald Tusk,receives
+CALDR_14_30,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_30,Viviane Reding,George Papandreou,receives
+CALDR_14_31,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_14_31,Catherine Ashton,David Miliband,receives
+CALDR_14_32,Joaquin Almunia,Olli Rehn,meets
+CALDR_14_32,Viviane Reding,Michel Barnier,receives
+CALDR_14_33,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_33,Catherine Ashton,Donald Tusk,receives
+CALDR_14_34,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_34,Viviane Reding,George Papandreou,receives
+CALDR_14_35,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_14_35,Catherine Ashton,David Miliband,receives
+CALDR_14_36,Joaquin Almunia,Olli Rehn,meets
+CALDR_14_36,Viviane Reding,Michel Barnier,receives
+CALDR_14_37,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_37,Catherine Ashton,Donald Tusk,receives
+CALDR_14_38,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_38,Viviane Reding,George Papandreou,receives
+CALDR_14_39,Jose Manuel Barroso,Karel De Gucht,meets
+CALDR_14_39,Catherine Ashton,David Miliband,receives
+CALDR_14_40,Joaquin Almunia,Olli Rehn,meets
+CALDR_14_40,Viviane Reding,Michel Barnier,receives
+CALDR_14_41,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_41,Catherine Ashton,Donald Tusk,receives
+CALDR_14_42,Joaquin Almunia,Michel Barnier,meets
+CALDR_14_42,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_42,Catherine Ashton,Donald Tusk,receives
+CALDR_14_42,Androulla Vassiliou,Michel Barnier,receives
+CALDR_14_42,Karel De Gucht,George Papandreou,receives
+CALDR_14_43,Joaquin Almunia,Toshimitu Motegi,meets
+CALDR_14_43,Viviane Reding,Jörg Monar,receives
+CALDR_14_43,Jose Manuel Barroso,members of the Club des Grandes Entreprises,meets
+CALDR_14_43,Catherine Ashton,Christine Kelly,receives
+CALDR_14_44,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_44,Catherine Ashton,Donald Tusk,receives
+CALDR_14_44,Viviane Reding,Michel Barnier,meets
+CALDR_14_44,Joaquin Almunia,Jörg Monar,receives
+CALDR_14_45,Androulla Vassiliou,Karel De Gucht,meets
+CALDR_14_45,Catherine Ashton,David Miliband,receives
+CALDR_14_45,Michel Barnier,Toshimitu Motegi,receives
+CALDR_14_45,Viviane Reding,members of the Club des Grandes Entreprises,receives
+CALDR_14_46,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_46,Catherine Ashton,Donald Tusk,receives
+CALDR_14_46,Androulla Vassiliou,Michel Barnier,receives
+CALDR_14_46,Karel De Gucht,George Papandreou,receives
+CALDR_14_47,Joaquin Almunia,Toshimitu Motegi,meets
+CALDR_14_47,Viviane Reding,Jörg Monar,receives
+CALDR_14_47,Jose Manuel Barroso,members of the Club des Grandes Entreprises,meets
+CALDR_14_47,Catherine Ashton,Christine Kelly,receives
+CALDR_14_48,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_48,Catherine Ashton,Donald Tusk,receives
+CALDR_14_48,Viviane Reding,Michel Barnier,meets
+CALDR_14_48,Joaquin Almunia,Jörg Monar,receives
+CALDR_14_49,Androulla Vassiliou,Karel De Gucht,meets
+CALDR_14_49,Catherine Ashton,David Miliband,receives
+CALDR_14_49,Michel Barnier,Toshimitu Motegi,receives
+CALDR_14_49,Viviane Reding,members of the Club des Grandes Entreprises,receives
+CALDR_14_50,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_50,Catherine Ashton,Donald Tusk,receives
+CALDR_14_50,Androulla Vassiliou,Michel Barnier,receives
+CALDR_14_50,Karel De Gucht,George Papandreou,receives
+CALDR_14_51,Joaquin Almunia,Toshimitu Motegi,meets
+CALDR_14_51,Viviane Reding,Jörg Monar,receives
+CALDR_14_51,Jose Manuel Barroso,members of the Club des Grandes Entreprises,meets
+CALDR_14_51,Catherine Ashton,Christine Kelly,receives
+CALDR_14_52,Jose Manuel Barroso,Herman Van Rompuy,meets
+CALDR_14_52,Catherine Ashton,Donald Tusk,receives
+CALDR_14_52,Viviane Reding,Michel Barnier,meets
+CALDR_14_52,Joaquin Almunia,Jörg Monar,receives
+CALDR_15_01,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_15_01,Frans Timmermans,Donald Tusk,receives
+CALDR_15_01,Margrethe Vestager,Karel De Gucht,meets
+CALDR_15_02,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_15_02,Cecilia Malmström,Andrus Ansip,receives
+CALDR_15_02,Maroš Šefčovič,Valdis Dombrovskis,meets
+CALDR_15_03,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_03,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_15_03,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_04,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_04,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_15_04,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_05,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_15_05,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_15_05,Frans Timmermans,Pierre Moscovici,meets
+CALDR_15_06,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_15_06,Margrethe Vestager,Andrus Ansip,receives
+CALDR_15_06,Jyrki Katainen,Karmenu Vella,meets
+CALDR_15_07,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_07,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_15_07,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_08,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_08,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_15_08,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_15_09,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_15_09,Cecilia Malmström,Andrus Ansip,receives
+CALDR_15_09,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_15_10,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_15_10,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_15_10,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_11,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_15_11,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_15_11,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_15_12,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_12,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_15_12,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_13,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_13,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_15_13,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_14,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_15_14,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_15_14,Frans Timmermans,Pierre Moscovici,meets
+CALDR_15_15,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_15_15,Margrethe Vestager,Andrus Ansip,receives
+CALDR_15_15,Jyrki Katainen,Karmenu Vella,meets
+CALDR_15_16,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_16,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_15_16,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_17,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_17,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_15_17,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_15_18,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_15_18,Cecilia Malmström,Andrus Ansip,receives
+CALDR_15_18,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_15_19,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_15_19,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_15_19,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_20,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_15_20,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_15_20,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_15_21,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_21,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_15_21,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_22,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_22,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_15_22,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_23,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_15_23,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_15_23,Frans Timmermans,Pierre Moscovici,meets
+CALDR_15_24,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_15_24,Margrethe Vestager,Andrus Ansip,receives
+CALDR_15_24,Jyrki Katainen,Karmenu Vella,meets
+CALDR_15_25,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_25,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_15_25,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_26,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_26,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_15_26,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_15_27,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_15_27,Cecilia Malmström,Andrus Ansip,receives
+CALDR_15_27,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_15_28,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_15_28,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_15_28,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_29,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_15_29,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_15_29,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_15_30,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_30,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_15_30,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_31,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_31,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_15_31,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_32,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_15_32,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_15_32,Frans Timmermans,Pierre Moscovici,meets
+CALDR_15_33,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_15_33,Margrethe Vestager,Andrus Ansip,receives
+CALDR_15_33,Jyrki Katainen,Karmenu Vella,meets
+CALDR_15_34,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_34,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_15_34,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_35,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_35,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_15_35,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_15_36,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_15_36,Cecilia Malmström,Andrus Ansip,receives
+CALDR_15_36,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_15_37,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_15_37,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_15_37,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_38,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_15_38,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_15_38,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_15_39,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_39,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_15_39,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_40,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_40,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_15_40,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_41,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_15_41,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_15_41,Frans Timmermans,Pierre Moscovici,meets
+CALDR_15_42,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_15_42,Margrethe Vestager,Andrus Ansip,receives
+CALDR_15_42,Jyrki Katainen,Karmenu Vella,meets
+CALDR_15_43,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_43,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_15_43,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_44,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_44,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_15_44,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_15_45,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_15_45,Cecilia Malmström,Andrus Ansip,receives
+CALDR_15_45,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_15_46,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_15_46,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_15_46,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_47,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_15_47,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_15_47,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_15_48,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_15_48,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_15_48,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_15_49,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_15_49,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_15_49,Cecilia Malmström,Phil Hogan,meets
+CALDR_15_50,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_15_50,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_15_50,Frans Timmermans,Pierre Moscovici,meets
+CALDR_15_51,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_15_51,Margrethe Vestager,Andrus Ansip,receives
+CALDR_15_51,Jyrki Katainen,Karmenu Vella,meets
+CALDR_16_01,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_01,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_16_01,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_02,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_16_02,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_16_02,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_03,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_16_03,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_16_03,Frans Timmermans,Pierre Moscovici,meets
+CALDR_16_04,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_16_04,Margrethe Vestager,Andrus Ansip,receives
+CALDR_16_04,Jyrki Katainen,Karmenu Vella,meets
+CALDR_16_05,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_05,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_16_05,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_06,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_06,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_16_06,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_16_07,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_16_07,Cecilia Malmström,Andrus Ansip,receives
+CALDR_16_07,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_16_08,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_16_08,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_16_08,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_16_09,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_16_09,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_16_09,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_16_10,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_10,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_16_10,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_11,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_16_11,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_16_11,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_12,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_16_12,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_16_12,Frans Timmermans,Pierre Moscovici,meets
+CALDR_16_13,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_16_13,Margrethe Vestager,Andrus Ansip,receives
+CALDR_16_13,Jyrki Katainen,Karmenu Vella,meets
+CALDR_16_14,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_14,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_16_14,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_15,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_15,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_16_15,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_16_16,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_16_16,Cecilia Malmström,Andrus Ansip,receives
+CALDR_16_16,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_16_17,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_16_17,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_16_17,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_16_18,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_16_18,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_16_18,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_16_19,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_19,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_16_19,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_20,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_16_20,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_16_20,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_21,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_16_21,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_16_21,Frans Timmermans,Pierre Moscovici,meets
+CALDR_16_22,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_16_22,Margrethe Vestager,Andrus Ansip,receives
+CALDR_16_22,Jyrki Katainen,Karmenu Vella,meets
+CALDR_16_23,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_23,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_16_23,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_24,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_24,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_16_24,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_16_25,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_16_25,Cecilia Malmström,Andrus Ansip,receives
+CALDR_16_25,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_16_26,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_16_26,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_16_26,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_16_27,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_16_27,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_16_27,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_16_28,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_28,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_16_28,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_29,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_16_29,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_16_29,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_30,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_16_30,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_16_30,Frans Timmermans,Pierre Moscovici,meets
+CALDR_16_31,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_16_31,Margrethe Vestager,Andrus Ansip,receives
+CALDR_16_31,Jyrki Katainen,Karmenu Vella,meets
+CALDR_16_32,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_32,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_16_32,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_33,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_33,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_16_33,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_16_34,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_16_34,Cecilia Malmström,Andrus Ansip,receives
+CALDR_16_34,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_16_35,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_16_35,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_16_35,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_16_36,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_16_36,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_16_36,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_16_37,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_37,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_16_37,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_38,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_16_38,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_16_38,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_39,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_16_39,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_16_39,Frans Timmermans,Pierre Moscovici,meets
+CALDR_16_40,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_16_40,Margrethe Vestager,Andrus Ansip,receives
+CALDR_16_40,Jyrki Katainen,Karmenu Vella,meets
+CALDR_16_41,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_41,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_16_41,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_42,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_42,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_16_42,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_16_43,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_16_43,Cecilia Malmström,Andrus Ansip,receives
+CALDR_16_43,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_16_44,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_16_44,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_16_44,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_16_45,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_16_45,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_16_45,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_16_46,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_46,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_16_46,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_47,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_16_47,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_16_47,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_48,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_16_48,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_16_48,Frans Timmermans,Pierre Moscovici,meets
+CALDR_16_49,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_16_49,Margrethe Vestager,Andrus Ansip,receives
+CALDR_16_49,Jyrki Katainen,Karmenu Vella,meets
+CALDR_16_50,Cecilia Malmström,Phil Hogan,meets
+CALDR_16_50,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_16_50,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_16_51,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_16_51,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_16_51,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_17_01,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_01,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_17_01,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_02,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_17_02,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_17_02,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_03,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_17_03,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_17_03,Frans Timmermans,Pierre Moscovici,meets
+CALDR_17_04,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_17_04,Margrethe Vestager,Andrus Ansip,receives
+CALDR_17_04,Jyrki Katainen,Karmenu Vella,meets
+CALDR_17_05,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_05,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_17_05,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_06,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_06,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_17_06,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_17_07,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_17_07,Cecilia Malmström,Andrus Ansip,receives
+CALDR_17_07,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_17_08,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_17_08,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_17_08,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_17_09,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_17_09,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_17_09,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_17_10,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_10,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_17_10,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_11,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_17_11,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_17_11,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_12,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_17_12,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_17_12,Frans Timmermans,Pierre Moscovici,meets
+CALDR_17_13,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_17_13,Margrethe Vestager,Andrus Ansip,receives
+CALDR_17_13,Jyrki Katainen,Karmenu Vella,meets
+CALDR_17_14,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_14,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_17_14,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_15,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_15,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_17_15,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_17_16,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_17_16,Cecilia Malmström,Andrus Ansip,receives
+CALDR_17_16,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_17_17,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_17_17,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_17_17,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_17_18,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_17_18,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_17_18,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_17_19,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_19,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_17_19,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_20,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_17_20,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_17_20,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_21,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_17_21,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_17_21,Frans Timmermans,Pierre Moscovici,meets
+CALDR_17_22,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_17_22,Margrethe Vestager,Andrus Ansip,receives
+CALDR_17_22,Jyrki Katainen,Karmenu Vella,meets
+CALDR_17_23,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_23,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_17_23,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_24,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_24,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_17_24,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_17_25,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_17_25,Cecilia Malmström,Andrus Ansip,receives
+CALDR_17_25,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_17_26,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_17_26,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_17_26,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_17_27,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_17_27,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_17_27,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_17_28,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_28,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_17_28,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_29,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_17_29,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_17_29,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_30,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_17_30,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_17_30,Frans Timmermans,Pierre Moscovici,meets
+CALDR_17_31,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_17_31,Margrethe Vestager,Andrus Ansip,receives
+CALDR_17_31,Jyrki Katainen,Karmenu Vella,meets
+CALDR_17_32,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_32,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_17_32,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_33,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_33,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_17_33,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_17_34,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_17_34,Cecilia Malmström,Andrus Ansip,receives
+CALDR_17_34,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_17_35,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_17_35,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_17_35,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_17_36,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_17_36,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_17_36,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_17_37,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_37,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_17_37,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_38,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_17_38,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_17_38,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_39,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_17_39,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_17_39,Frans Timmermans,Pierre Moscovici,meets
+CALDR_17_40,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_17_40,Margrethe Vestager,Andrus Ansip,receives
+CALDR_17_40,Jyrki Katainen,Karmenu Vella,meets
+CALDR_17_41,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_41,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_17_41,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_42,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_42,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_17_42,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_17_43,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_17_43,Cecilia Malmström,Andrus Ansip,receives
+CALDR_17_43,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_17_44,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_17_44,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_17_44,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_17_45,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_17_45,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_17_45,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_17_46,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_46,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_17_46,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_47,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_17_47,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_17_47,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_48,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_17_48,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_17_48,Frans Timmermans,Pierre Moscovici,meets
+CALDR_17_49,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_17_49,Margrethe Vestager,Andrus Ansip,receives
+CALDR_17_49,Jyrki Katainen,Karmenu Vella,meets
+CALDR_17_50,Cecilia Malmström,Phil Hogan,meets
+CALDR_17_50,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_17_50,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_17_51,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_17_51,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_17_51,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_18_01,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_01,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_18_01,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_02,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_18_02,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_18_02,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_03,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_18_03,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_18_03,Frans Timmermans,Pierre Moscovici,meets
+CALDR_18_04,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_18_04,Margrethe Vestager,Andrus Ansip,receives
+CALDR_18_04,Jyrki Katainen,Karmenu Vella,meets
+CALDR_18_05,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_05,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_18_05,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_06,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_06,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_18_06,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_18_07,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_18_07,Cecilia Malmström,Andrus Ansip,receives
+CALDR_18_07,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_18_08,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_18_08,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_18_08,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_18_09,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_18_09,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_18_09,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_18_10,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_10,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_18_10,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_11,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_18_11,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_18_11,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_12,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_18_12,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_18_12,Frans Timmermans,Pierre Moscovici,meets
+CALDR_18_13,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_18_13,Margrethe Vestager,Andrus Ansip,receives
+CALDR_18_13,Jyrki Katainen,Karmenu Vella,meets
+CALDR_18_14,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_14,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_18_14,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_15,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_15,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_18_15,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_18_16,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_18_16,Cecilia Malmström,Andrus Ansip,receives
+CALDR_18_16,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_18_17,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_18_17,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_18_17,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_18_18,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_18_18,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_18_18,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_18_19,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_19,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_18_19,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_20,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_18_20,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_18_20,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_21,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_18_21,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_18_21,Frans Timmermans,Pierre Moscovici,meets
+CALDR_18_22,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_18_22,Margrethe Vestager,Andrus Ansip,receives
+CALDR_18_22,Jyrki Katainen,Karmenu Vella,meets
+CALDR_18_23,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_23,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_18_23,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_24,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_24,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_18_24,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_18_25,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_18_25,Cecilia Malmström,Andrus Ansip,receives
+CALDR_18_25,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_18_26,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_18_26,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_18_26,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_18_27,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_18_27,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_18_27,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_18_28,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_28,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_18_28,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_29,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_18_29,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_18_29,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_30,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_18_30,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_18_30,Frans Timmermans,Pierre Moscovici,meets
+CALDR_18_31,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_18_31,Margrethe Vestager,Andrus Ansip,receives
+CALDR_18_31,Jyrki Katainen,Karmenu Vella,meets
+CALDR_18_32,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_32,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_18_32,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_33,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_33,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_18_33,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_18_34,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_18_34,Cecilia Malmström,Andrus Ansip,receives
+CALDR_18_34,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_18_35,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_18_35,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_18_35,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_18_36,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_18_36,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_18_36,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_18_37,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_37,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_18_37,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_38,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_18_38,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_18_38,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_39,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_18_39,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_18_39,Frans Timmermans,Pierre Moscovici,meets
+CALDR_18_40,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_18_40,Margrethe Vestager,Andrus Ansip,receives
+CALDR_18_40,Jyrki Katainen,Karmenu Vella,meets
+CALDR_18_41,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_41,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_18_41,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_42,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_42,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_18_42,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_18_43,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_18_43,Cecilia Malmström,Andrus Ansip,receives
+CALDR_18_43,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_18_44,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_18_44,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_18_44,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_18_45,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_18_45,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_18_45,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_18_46,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_46,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_18_46,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_47,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_18_47,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_18_47,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_48,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_18_48,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_18_48,Frans Timmermans,Pierre Moscovici,meets
+CALDR_18_49,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_18_49,Margrethe Vestager,Andrus Ansip,receives
+CALDR_18_49,Jyrki Katainen,Karmenu Vella,meets
+CALDR_18_50,Cecilia Malmström,Phil Hogan,meets
+CALDR_18_50,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_18_50,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_18_51,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_18_51,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_18_51,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_19_01,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_01,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_19_01,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_02,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_19_02,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_19_02,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_03,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_19_03,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_19_03,Frans Timmermans,Pierre Moscovici,meets
+CALDR_19_04,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_19_04,Margrethe Vestager,Andrus Ansip,receives
+CALDR_19_04,Jyrki Katainen,Karmenu Vella,meets
+CALDR_19_05,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_05,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_19_05,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_06,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_06,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_19_06,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_19_07,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_19_07,Cecilia Malmström,Andrus Ansip,receives
+CALDR_19_07,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_19_08,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_19_08,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_19_08,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_19_09,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_19_09,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_19_09,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_19_10,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_10,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_19_10,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_11,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_19_11,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_19_11,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_12,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_19_12,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_19_12,Frans Timmermans,Pierre Moscovici,meets
+CALDR_19_13,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_19_13,Margrethe Vestager,Andrus Ansip,receives
+CALDR_19_13,Jyrki Katainen,Karmenu Vella,meets
+CALDR_19_14,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_14,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_19_14,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_15,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_15,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_19_15,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_19_16,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_19_16,Cecilia Malmström,Andrus Ansip,receives
+CALDR_19_16,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_19_17,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_19_17,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_19_17,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_19_18,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_19_18,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_19_18,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_19_19,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_19,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_19_19,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_20,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_19_20,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_19_20,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_21,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_19_21,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_19_21,Frans Timmermans,Pierre Moscovici,meets
+CALDR_19_22,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_19_22,Margrethe Vestager,Andrus Ansip,receives
+CALDR_19_22,Jyrki Katainen,Karmenu Vella,meets
+CALDR_19_23,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_23,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_19_23,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_24,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_24,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_19_24,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_19_25,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_19_25,Cecilia Malmström,Andrus Ansip,receives
+CALDR_19_25,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_19_26,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_19_26,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_19_26,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_19_27,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_19_27,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_19_27,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_19_28,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_28,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_19_28,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_29,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_19_29,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_19_29,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_30,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_19_30,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_19_30,Frans Timmermans,Pierre Moscovici,meets
+CALDR_19_31,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_19_31,Margrethe Vestager,Andrus Ansip,receives
+CALDR_19_31,Jyrki Katainen,Karmenu Vella,meets
+CALDR_19_32,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_32,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_19_32,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_33,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_33,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_19_33,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_19_34,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_19_34,Cecilia Malmström,Andrus Ansip,receives
+CALDR_19_34,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_19_35,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_19_35,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_19_35,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_19_36,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_19_36,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_19_36,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_19_37,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_37,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_19_37,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_38,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_19_38,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_19_38,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_39,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_19_39,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_19_39,Frans Timmermans,Pierre Moscovici,meets
+CALDR_19_40,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_19_40,Margrethe Vestager,Andrus Ansip,receives
+CALDR_19_40,Jyrki Katainen,Karmenu Vella,meets
+CALDR_19_41,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_41,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_19_41,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_42,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_42,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_19_42,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_19_43,Jyrki Katainen,Dimitris Avramopoulos,meets
+CALDR_19_43,Cecilia Malmström,Andrus Ansip,receives
+CALDR_19_43,Maroš Šefčovič,Carlos Moedas,meets
+CALDR_19_44,Jean-Claude Juncker,Federica Mogherini,meets
+CALDR_19_44,Frans Timmermans,Miguel Arias Cañete,receives
+CALDR_19_44,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_19_45,Jyrki Katainen,Pierre Moscovici,meets
+CALDR_19_45,Cecilia Malmström,Kristalina Georgieva,receives
+CALDR_19_45,Maroš Šefčovič,Elżbieta Bieńkowska,meets
+CALDR_19_46,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_46,Federica Mogherini,Miguel Arias Cañete,receives
+CALDR_19_46,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_47,Margrethe Vestager,Elżbieta Bieńkowska,meets
+CALDR_19_47,Jyrki Katainen,Dimitris Avramopoulos,receives
+CALDR_19_47,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_48,Maroš Šefčovič,Johannes Hahn,meets
+CALDR_19_48,Jean-Claude Juncker,Carlos Moedas,receives
+CALDR_19_48,Frans Timmermans,Pierre Moscovici,meets
+CALDR_19_49,Federica Mogherini,Miguel Arias Cañete,meets
+CALDR_19_49,Margrethe Vestager,Andrus Ansip,receives
+CALDR_19_49,Jyrki Katainen,Karmenu Vella,meets
+CALDR_19_50,Cecilia Malmström,Phil Hogan,meets
+CALDR_19_50,Maroš Šefčovič,Elżbieta Bieńkowska,receives
+CALDR_19_50,Jean-Claude Juncker,Donald Tusk,meets
+CALDR_19_51,Frans Timmermans,Kristalina Georgieva,meets
+CALDR_19_51,Federica Mogherini,Valdis Dombrovskis,receives
+CALDR_19_51,Margrethe Vestager,Pierre Moscovici,meets
+CALDR_20_01,Ursula von der Leyen,Charles Michel,meets
+CALDR_20_01,Frans Timmermans,Kadri Simson,receives
+CALDR_20_01,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_02,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_02,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_02,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_03,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_03,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_20_03,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_04,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_04,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_04,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_05,Ursula von der Leyen,Charles Michel,meets
+CALDR_20_05,Frans Timmermans,Kadri Simson,receives
+CALDR_20_05,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_06,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_06,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_06,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_07,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_07,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_20_07,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_08,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_08,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_08,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_09,Ursula von der Leyen,Charles Michel,meets
+CALDR_20_09,Frans Timmermans,Kadri Simson,receives
+CALDR_20_09,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_10,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_10,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_10,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_11,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_11,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_20_11,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_12,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_12,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_12,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_13,Ursula von der Leyen,Charles Michel,meets
+CALDR_20_13,Frans Timmermans,Kadri Simson,receives
+CALDR_20_13,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_14,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_14,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_14,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_15,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_15,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_20_15,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_16,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_16,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_16,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_17,Ursula von der Leyen,Charles Michel,meets
+CALDR_20_17,Frans Timmermans,Kadri Simson,receives
+CALDR_20_17,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_18,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_18,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_18,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_19,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_19,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_20_19,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_20,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_20,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_20,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_21,Ursula von der Leyen,Charles Michel,meets
+CALDR_20_21,Frans Timmermans,Kadri Simson,receives
+CALDR_20_21,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_22,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_22,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_22,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_23,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_23,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_20_23,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_24,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_24,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_24,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_25,Ursula von der Leyen,Charles Michel,meets
+CALDR_20_25,Frans Timmermans,Kadri Simson,receives
+CALDR_20_25,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_26,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_26,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_26,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_27,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_27,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_27,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_20_27,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_28,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_28,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_28,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_29,Ursula von der Leyen,Charles Michel,meets
+CALDR_20_29,Frans Timmermans,Kadri Simson,receives
+CALDR_20_29,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_30,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_30,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_30,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_31,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_31,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_20_31,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_32,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_32,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_32,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_33,Ursula von der Leyen,Charles Michel,meets
+CALDR_20_33,Frans Timmermans,Kadri Simson,receives
+CALDR_20_33,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_34,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_34,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_34,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_35,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_35,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_20_35,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_36,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_36,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_36,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_37,Ursula von der Leyen,Charles Michel,meets
+CALDR_20_37,Frans Timmermans,Kadri Simson,receives
+CALDR_20_37,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_38,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_38,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_38,Maroš Šefčovič,Phil Hogan,meets
+CALDR_20_39,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_20_39,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_20_39,Josep Borrell,Janez Lenarčič,meets
+CALDR_20_40,Margrethe Vestager,Thierry Breton,meets
+CALDR_20_40,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_20_40,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_01,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_01,Frans Timmermans,Kadri Simson,receives
+CALDR_21_01,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_02,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_02,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_02,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_03,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_03,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_03,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_04,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_04,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_04,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_05,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_05,Frans Timmermans,Kadri Simson,receives
+CALDR_21_05,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_06,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_06,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_06,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_07,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_07,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_07,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_08,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_08,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_08,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_09,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_09,Frans Timmermans,Kadri Simson,receives
+CALDR_21_09,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_10,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_10,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_10,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_11,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_11,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_11,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_12,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_12,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_12,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_13,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_13,Frans Timmermans,Kadri Simson,receives
+CALDR_21_13,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_14,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_14,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_14,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_15,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_15,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_15,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_16,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_16,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_16,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_17,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_17,Frans Timmermans,Kadri Simson,receives
+CALDR_21_17,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_18,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_18,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_18,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_19,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_19,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_19,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_20,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_20,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_20,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_21,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_21,Frans Timmermans,Kadri Simson,receives
+CALDR_21_21,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_22,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_22,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_22,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_23,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_23,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_23,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_24,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_24,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_24,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_25,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_25,Frans Timmermans,Kadri Simson,receives
+CALDR_21_25,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_26,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_26,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_26,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_27,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_27,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_27,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_27,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_28,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_28,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_28,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_29,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_29,Frans Timmermans,Kadri Simson,receives
+CALDR_21_29,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_30,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_30,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_30,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_31,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_31,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_31,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_32,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_32,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_32,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_33,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_33,Frans Timmermans,Kadri Simson,receives
+CALDR_21_33,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_34,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_34,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_34,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_35,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_35,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_35,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_36,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_36,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_36,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_37,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_37,Frans Timmermans,Kadri Simson,receives
+CALDR_21_37,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_38,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_38,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_38,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_39,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_39,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_39,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_40,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_40,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_40,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_41,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_41,Frans Timmermans,Kadri Simson,receives
+CALDR_21_41,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_42,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_42,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_42,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_43,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_43,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_43,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_44,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_44,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_44,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_45,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_45,Frans Timmermans,Kadri Simson,receives
+CALDR_21_45,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_46,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_46,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_46,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_47,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_47,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_47,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_48,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_48,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_48,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_49,Ursula von der Leyen,Charles Michel,meets
+CALDR_21_49,Frans Timmermans,Kadri Simson,receives
+CALDR_21_49,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_50,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_50,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_50,Maroš Šefčovič,Phil Hogan,meets
+CALDR_21_51,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_21_51,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_21_51,Josep Borrell,Janez Lenarčič,meets
+CALDR_21_52,Margrethe Vestager,Thierry Breton,meets
+CALDR_21_52,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_21_52,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_01,Ursula von der Leyen,Charles Michel,meets
+CALDR_22_01,Frans Timmermans,Kadri Simson,receives
+CALDR_22_01,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_02,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_02,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_02,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_03,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_22_03,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_22_03,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_04,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_04,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_04,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_05,Ursula von der Leyen,Charles Michel,meets
+CALDR_22_05,Frans Timmermans,Kadri Simson,receives
+CALDR_22_05,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_06,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_06,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_06,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_07,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_22_07,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_22_07,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_08,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_08,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_08,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_09,Ursula von der Leyen,Charles Michel,meets
+CALDR_22_09,Frans Timmermans,Kadri Simson,receives
+CALDR_22_09,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_10,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_10,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_10,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_11,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_22_11,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_22_11,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_12,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_12,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_12,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_13,Ursula von der Leyen,Charles Michel,meets
+CALDR_22_13,Frans Timmermans,Kadri Simson,receives
+CALDR_22_13,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_14,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_14,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_14,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_15,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_22_15,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_22_15,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_16,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_16,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_16,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_17,Ursula von der Leyen,Charles Michel,meets
+CALDR_22_17,Frans Timmermans,Kadri Simson,receives
+CALDR_22_17,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_18,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_18,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_18,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_19,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_22_19,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_22_19,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_20,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_20,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_20,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_21,Ursula von der Leyen,Charles Michel,meets
+CALDR_22_21,Frans Timmermans,Kadri Simson,receives
+CALDR_22_21,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_22,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_22,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_22,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_23,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_22_23,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_22_23,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_24,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_24,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_24,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_25,Ursula von der Leyen,Charles Michel,meets
+CALDR_22_25,Frans Timmermans,Kadri Simson,receives
+CALDR_22_25,Josep Borrell,Janez Lenarčič,meets
+CALDR_22_26,Margrethe Vestager,Thierry Breton,meets
+CALDR_22_26,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_22_26,Maroš Šefčovič,Phil Hogan,meets
+CALDR_22_27,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_01,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_01,Frans Timmermans,Kadri Simson,receives
+CALDR_23_01,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_02,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_02,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_02,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_03,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_03,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_03,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_04,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_04,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_04,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_05,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_05,Frans Timmermans,Kadri Simson,receives
+CALDR_23_05,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_06,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_06,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_06,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_07,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_07,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_07,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_08,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_08,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_08,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_09,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_09,Frans Timmermans,Kadri Simson,receives
+CALDR_23_09,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_10,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_10,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_10,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_11,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_11,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_11,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_12,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_12,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_12,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_13,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_13,Frans Timmermans,Kadri Simson,receives
+CALDR_23_13,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_14,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_14,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_14,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_15,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_15,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_15,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_16,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_16,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_16,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_17,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_17,Frans Timmermans,Kadri Simson,receives
+CALDR_23_17,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_18,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_18,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_18,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_19,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_19,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_19,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_20,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_20,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_20,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_21,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_21,Frans Timmermans,Kadri Simson,receives
+CALDR_23_21,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_22,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_22,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_22,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_23,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_23,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_23,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_24,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_24,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_24,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_25,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_25,Frans Timmermans,Kadri Simson,receives
+CALDR_23_25,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_26,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_26,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_26,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_27,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_27,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_27,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_28,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_28,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_28,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_29,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_29,Frans Timmermans,Kadri Simson,receives
+CALDR_23_29,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_30,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_30,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_30,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_31,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_31,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_31,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_32,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_32,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_32,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_33,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_33,Frans Timmermans,Kadri Simson,receives
+CALDR_23_33,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_34,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_34,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_34,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_35,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_35,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_35,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_36,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_36,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_36,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_37,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_37,Frans Timmermans,Kadri Simson,receives
+CALDR_23_37,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_38,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_38,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_38,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_39,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_39,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_39,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_40,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_40,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_40,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_41,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_41,Frans Timmermans,Kadri Simson,receives
+CALDR_23_41,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_42,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_42,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_42,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_43,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_43,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_43,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_44,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_44,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_44,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_45,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_45,Frans Timmermans,Kadri Simson,receives
+CALDR_23_45,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_46,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_46,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_46,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_47,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_47,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_47,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_48,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_48,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_48,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_49,Ursula von der Leyen,Charles Michel,meets
+CALDR_23_49,Frans Timmermans,Kadri Simson,receives
+CALDR_23_49,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_50,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_50,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_50,Maroš Šefčovič,Phil Hogan,meets
+CALDR_23_51,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_23_51,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_23_51,Josep Borrell,Janez Lenarčič,meets
+CALDR_23_52,Margrethe Vestager,Thierry Breton,meets
+CALDR_23_52,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_23_52,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_01,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_01,Frans Timmermans,Kadri Simson,receives
+CALDR_24_01,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_02,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_02,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_02,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_03,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_03,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_03,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_04,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_04,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_04,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_05,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_05,Frans Timmermans,Kadri Simson,receives
+CALDR_24_05,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_06,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_06,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_06,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_07,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_07,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_07,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_08,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_08,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_08,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_09,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_09,Frans Timmermans,Kadri Simson,receives
+CALDR_24_09,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_10,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_10,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_10,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_11,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_11,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_11,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_12,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_12,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_12,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_13,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_13,Frans Timmermans,Kadri Simson,receives
+CALDR_24_13,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_14,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_14,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_14,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_15,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_15,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_15,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_16,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_16,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_16,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_17,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_17,Frans Timmermans,Kadri Simson,receives
+CALDR_24_17,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_18,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_18,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_18,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_19,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_19,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_19,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_20,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_20,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_20,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_21,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_21,Frans Timmermans,Kadri Simson,receives
+CALDR_24_21,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_22,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_22,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_22,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_23,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_23,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_23,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_24,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_24,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_24,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_24,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_24,Frans Timmermans,Kadri Simson,receives
+CALDR_24_24,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_25,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_25,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_25,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_26,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_26,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_26,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_27,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_27,Frans Timmermans,Kadri Simson,receives
+CALDR_24_27,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_28,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_28,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_28,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_29,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_29,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_29,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_30,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_30,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_30,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_31,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_31,Frans Timmermans,Kadri Simson,receives
+CALDR_24_31,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_32,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_32,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_32,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_33,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_33,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_33,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_34,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_34,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_34,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_35,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_35,Frans Timmermans,Kadri Simson,receives
+CALDR_24_35,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_36,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_36,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_36,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_37,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_37,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_37,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_38,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_38,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_38,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_39,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_39,Frans Timmermans,Kadri Simson,receives
+CALDR_24_39,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_40,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_40,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_40,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_41,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_41,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_41,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_42,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_42,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_42,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_43,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_43,Frans Timmermans,Kadri Simson,receives
+CALDR_24_43,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_44,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_44,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_44,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_45,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_45,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_45,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_46,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_46,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_46,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_47,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_47,Frans Timmermans,Kadri Simson,receives
+CALDR_24_47,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_48,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_48,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_48,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_49,Ursula von der Leyen,Christine Lagarde,meets
+CALDR_24_49,Frans Timmermans,Virginijus Sinkevičius,receives
+CALDR_24_49,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_50,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_50,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_50,Maroš Šefčovič,Phil Hogan,meets
+CALDR_24_51,Ursula von der Leyen,Charles Michel,meets
+CALDR_24_51,Frans Timmermans,Kadri Simson,receives
+CALDR_24_51,Josep Borrell,Janez Lenarčič,meets
+CALDR_24_52,Margrethe Vestager,Thierry Breton,meets
+CALDR_24_52,Valdis Dombrovskis,Věra Jourová,receives
+CALDR_24_52,Maroš Šefčovič,Phil Hogan,meets
