@@ -5,7 +5,7 @@ var height = window.innerHeight;
 var arrowMarkerWidth = 4;
 var arrowMarkerHeight = 4;
 var arrowRefX = 3; // Adjust this to change how close the arrow is to the node edge
-var targetPaddingMultiplier = 5; // Adjust this to change the distance of the arrow from the node center (default=5)
+var targetPaddingMultiplier = 5; // Adjust this to change the distance of the arrow from the node center
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -97,6 +97,20 @@ d3.csv("ec-subject-object-pairs.csv").then(function(links) {
         .style('fill', '#000')
         .text(function(d) { return d.id; });
 
+var edgeLabels = g.append("g")
+    .attr("class", "edge-labels")
+    .selectAll("text")
+    .data(links)
+    .enter().append("text")
+    .attr("class", "edge-label")
+    .attr("dy", -3)
+    .style("fill", "#000")
+    .style("font-weight", "bold")
+    .style('stroke', 'rgba(255, 255, 255, 0.7)')
+    .style('stroke-width', 0.3)
+    .style("font-size", "13px")
+    .text('');
+
     simulation
         .nodes(Object.values(nodes))
         .on("tick", ticked);
@@ -132,6 +146,10 @@ d3.csv("ec-subject-object-pairs.csv").then(function(links) {
         label
             .attr("x", function(d) { return d.x + 10; })
             .attr("y", function(d) { return d.y + 3; });
+
+        edgeLabels
+            .attr("x", function(d) { return (d.source.x + d.target.x) / 2; })
+            .attr("y", function(d) { return (d.source.y + d.target.y) / 2; });
     }
 
     function dragstarted(event, d) {
@@ -170,10 +188,34 @@ d3.csv("ec-subject-object-pairs.csv").then(function(links) {
             return l.active || connected(l) ? "visible" : "hidden";
         });
 
+        edgeLabels.style("visibility", function(l) {
+            return l.source.active || l.target.active ? "visible" : "hidden";
+        });
+
+        if (isActive) {
+            // Calculate edge counts
+            var edgeCounts = {};
+            links.forEach(function(l) {
+                var key = l.source.id < l.target.id ? l.source.id + '-' + l.target.id : l.target.id + '-' + l.source.id;
+                edgeCounts[key] = (edgeCounts[key] || 0) + 1;
+            });
+
+            // Update edge labels
+            edgeLabels
+                .text(function(l) {
+                    var key = l.source.id < l.target.id ? l.source.id + '-' + l.target.id : l.target.id + '-' + l.source.id;
+                    return edgeCounts[key];
+                });
+        } else {
+            // Hide edge labels when not focusing
+            edgeLabels.text('');
+        }
+
         if (!isActive) {
             node.style("visibility", "visible");
             link.style("visibility", "visible");
             label.style("visibility", "visible");
+            edgeLabels.style("visibility", "hidden");
         }
 
         function connected(o) {
