@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Chinese Lynchings Over Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Leaflet CSS and JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+  <!-- D3 for CSV loading -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Basic styling -->
+  <style>
+    html, body { margin:0; padding:0; width:100%; height:100%; }
+    #map { width:100%; height:100%; }
+    /* Overlay for timeline controls: half the map's width, centered at bottom */
+    #overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      z-index: 1000;
+      background: rgba(255,255,255,0.8);
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    #yearSlider { width: 100%; }
+    #yearLabel { font-size: 1.2em; font-weight: bold; margin: 0 10px; }
+    #playButton { margin-top: 10px; }
+    /* Default marker style: thin stroke */
+    .leaflet-interactive { stroke-width: 2 !important; }
+    /* Fade-in effect for new markers */
+    .fade-in {
+      transition: opacity 3s ease-out, fill 3s ease-out, stroke 3s ease-out;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="overlay">
+    <input type="range" id="yearSlider" step="1">
+    <span id="yearLabel"></span>
+    <br>
+    <button id="playButton" class="btn btn-primary">Play</button>
+  </div>
+  
+  <script>
+    // Parameters for fade-in effect and playback
+    const fadeDuration = 3000;       // fade duration in ms
+    const startColor = "#ffcc00";      // gold
+    const endColor = "red";            // final color
+    const playbackSpeed = 500;         // ms per year increment
+
+    // CSV URL from your published Google Sheet (Cleaned sheet)
+    const csvURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQG_GaCP2mcwcXa1j3A7Kzt0QO-_AvPx_YPZ9vaUbGFk4MybX5RyDmMtFN5h37g-WNpMexaRRfMCVEz/pub?gid=29249858&single=true&output=csv";
+    
+    let dataRows = [];
+    let minYear, maxYear;
+    let lastYear = 0;
+    let animationInterval = null;
+    
+    // Set up Leaflet map
+    const map = L.map('map').setView([39.8283, -98.5795], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+    const markersLayer = L.layerGroup().addTo(map);
+    
+    // Timeline controls
+    const slider = document.getElementById("yearSlider");
+    const yearLabel = document.getElementById("yearLabel");
+    const playButton = document.getElementById("playButton");
+    
+    // Scale for marker radius (based on Number of Victims)
+    function scaleRadius(v) {
+      const victimValues = dataRows.map(d => +d["Number of Victims"]);
+      const minVictims = Math.min(...victimValues);
+      const maxVictims = Math.max(...victimValues);
+      return 5 + (v - minVictims) / (maxVictims - minVictims) * 15;
+    }
+    
+    // Build popup content
+    function buildPopup(d) {
+      let content = `<b>Name:</b> ${d.Name}<br><b>Victims:</b> ${d["Number of Victims"]}<br>`;
+      let loc = [];
+      if(d.City && d.City.trim() !== "") loc.push(d.City);
+      if(d.County && d.County.trim() !== "") loc.push(d.County);
+      loc.push(d.State);
+      content += `<b>Location:</b> ${loc.join(", ")}`;
+      return content;
+    }
+    
+    // Fade in marker by adjusting opacity and colors via CSS transitions
+    function fadeInMarker(el) {
+      el.style.transition = `opacity ${fadeDuration}ms ease-out, fill ${fadeDuration}ms ease-out, stroke ${fadeDuration}ms ease-out`;
+      el.style.opacity = 0;
+      el.style.fill = startColor;
+      el.style.stroke = startColor;
+      // Force reflow
+      void el.offsetWidth;
+      // Then transition to final values
+      el.style.opacity = 0.6;
+      el.style.fill = endColor;
+      el.style.stroke = endColor;
+    }
+    
+    // Update markers cumulatively based on currentYear
+    function updateMarkers(currentYear) {
+      markersLayer.clearLayers();
+      const filtered = dataRows.filter(d => +d.Year <= currentYear);
+      filtered.forEach(d => {
+        if(d.Latitude && d.Longitude) {
+          const marker = L.circleMarker([+d.Latitude, +d.Longitude], {
+            radius: scaleRadius(+d["Number of Victims"]),
+            color: endColor,
+            fillColor: endColor,
+            fillOpacity: 0.6,
+            weight: 2
+          });
+          marker.bindPopup(buildPopup(d));
+          // For markers that are new (their Year > lastYear), apply fade-in effect.
+          if(+d.Year > lastYear) {
+            marker.on('add', function() {
+              if(marker._path) {
+                marker._path.classList.add("fade-in");
+                fadeInMarker(marker._path);
+                setTimeout(() => {
+                  marker._path.classList.remove("fade-in");
+                }, fadeDuration);
+              }
+            });
+          }
+          markersLayer.addLayer(marker);
+        }
+      });
+      lastYear = currentYear;
+    }
+    
+    // Slider event listener: update markers and stop auto-play if active.
+    slider.addEventListener("input", function() {
+      const selectedYear = +this.value;
+      yearLabel.textContent = selectedYear;
+      if(animationInterval !== null) {
+        clearInterval(animationInterval);
+        animationInterval = null;
+        playButton.textContent = "Play";
+      }
+      updateMarkers(selectedYear);
+    });
+    
+    // Play/Pause button event listener.
+    playButton.addEventListener("click", function() {
+      // If at end, restart from beginning.
+      if(+slider.value >= maxYear) {
+        slider.value = minYear;
+        yearLabel.textContent = minYear;
+        updateMarkers(minYear);
+      }
+      if(animationInterval !== null) {
+        clearInterval(animationInterval);
+        animationInterval = null;
+        playButton.textContent = "Play";
+      } else {
+        playButton.textContent = "Pause";
+        animationInterval = setInterval(() => {
+          let year = +slider.value;
+          if(year < maxYear) {
+            year++;
+          } else {
+            clearInterval(animationInterval);
+            animationInterval = null;
+            playButton.textContent = "Play";
+          }
+          slider.value = year;
+          yearLabel.textContent = year;
+          updateMarkers(year);
+        }, playbackSpeed);
+      }
+    });
+    
+    // Load CSV from the provided URL using D3
+    d3.csv(csvURL).then(data => {
+      dataRows = data;
+      // Convert numeric fields
+      dataRows.forEach(d => {
+        d.Year = +d.Year;
+        d["Number of Victims"] = +d["Number of Victims"];
+        d.Latitude = +d.Latitude;
+        d.Longitude = +d.Longitude;
+      });
+      const allYears = dataRows.map(d => d.Year);
+      minYear = Math.min(...allYears);
+      maxYear = Math.max(...allYears);
+      slider.min = minYear;
+      slider.max = maxYear;
+      slider.value = minYear;
+      yearLabel.textContent = minYear;
+      lastYear = minYear;
+      updateMarkers(minYear);
+    }).catch(error => {
+      console.error("Error loading CSV:", error);
+    });
+  </script>
+</body>
+</html>
