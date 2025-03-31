@@ -199,9 +199,9 @@
       const allYears = dataRows.map(d => +getField(d, "Year"));
       minYear = Math.min(...allYears);
       maxYear = Math.max(...allYears);
-      // Force timeline to start at 1854 if data has earlier years
-      if(minYear < 1854) {
-        minYear = 1854;
+      // Force timeline to start at 1852 if data has earlier years
+      if(minYear < 1852) {
+        minYear = 1852;
       }
       slider.min = minYear;
       slider.max = maxYear;
